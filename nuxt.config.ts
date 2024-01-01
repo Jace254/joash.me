@@ -5,9 +5,23 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: {
+        default: 'vitesse-light',
+        dark: 'vitesse-dark',
+      },
+    },
+    markdown: {
+      remarkPlugins: [
+        'remark-external-links',
+      ],
+    },
+  },
   app: {
     head: {
-      titleTemplate: 'Joash Agesa',
+      titleTemplate: 'Joash Agesa - %s',
     },
   },
 })
