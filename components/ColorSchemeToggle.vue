@@ -7,9 +7,7 @@ function toggleMode() {
 </script>
 
 <template>
-  <button
-    @click="toggleMode"
-  >
+  <a class="select-none" title="Toggle Color Scheme" @click="toggleMode">
     <div dark:i-ph-sun-dim-duotone i-ph-moon-stars-duotone text-2xl />
-  </button>
+  </a>
 </template>
