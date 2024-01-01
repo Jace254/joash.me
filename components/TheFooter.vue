@@ -25,6 +25,6 @@ const randomQuote: string = quotes[Math.floor(Math.random() * quotes.length)]
       {{ randomQuote }}
     </div>
     <div flex-auto />
-    <div>{{ year }}</div>
+    <div>{{ year }} © Joash Agesa</div>
   </footer>
 </template>

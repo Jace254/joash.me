@@ -8,6 +8,6 @@ function toggleMode() {
 
 <template>
   <a class="select-none" title="Toggle Color Scheme" @click="toggleMode">
-    <div dark:i-ph-sun-dim-duotone i-ph-moon-stars-duotone text-2xl />
+    <div dark:i-ph-sun-dim-duotone i-material-symbols-dark-mode-outline text-2xl />
   </a>
 </template>
