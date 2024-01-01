@@ -12,11 +12,13 @@ const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 <template>
   <footer
     flex border-t border-border
-    w-full py3 px="300px"
+    w-full py3 md:px="30px"
+    px-2
     bg-faded font-mono
-    font-light text="#707070"
+    font-light
     items-center
-    text-sm
+    md:text-sm
+    text="~ 12px #707070"
   >
     <div font-thin>{{ randomQuote }}</div>
     <div flex-auto />
