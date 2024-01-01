@@ -1,19 +1,19 @@
 <script setup lang="ts">
-const year = new Date().getFullYear()
+const year: number = new Date().getFullYear()
 const quotes = [
   'If you don\'t take risks, you can\'t create a future. ~ Monkey D. Luffy',
   'Human strength lies in the ability to change yourself. ~ Saitama',
   'There’s no shame in falling down! True shame is to not stand up again! ~ Shintaro Midorima',
-  'A person can change, at the moment when the person wishes to change.  ~ Haruhi Fujioka'
+  'A person can change, at the moment when the person wishes to change.  ~ Haruhi Fujioka',
 ]
-const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+const randomQuote: string = quotes[Math.floor(Math.random() * quotes.length)]
 </script>
 
 <template>
   <footer
     flex border-t border-border
-    w-full py3 md:px="30px"
-    px4 lg:px="80px"
+    w-full py3 md:px="100px"
+    px4 lg:px="300px"
     bg-faded font-mono
     font-light
     items-center
@@ -21,7 +21,9 @@ const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
     gap-2
     text="~ 12px #707070"
   >
-    <div font-thin>{{ randomQuote }}</div>
+    <div font-thin>
+      {{ randomQuote }}
+    </div>
     <div flex-auto />
     <div>{{ year }}</div>
   </footer>
