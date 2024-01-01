@@ -1,8 +1,8 @@
 <template>
   <main flex justify-center h-full w-full pt="128px">
-    <article w-full max-w="var(--content-width)" prose class="slide-enter-content" md:px-0 px3>
+    <article w-full max-w="var(--content-width)"  class="slide-enter-content prose" md:px-0 px-7>
       <div>
-        <h3>Joash Agesa</h3>
+        <h1>Joash Agesa</h1>
         <p>
           <em>Weaving interfaces</em>
           . Building polished software and web experiences. Immersed in details . Frontend Developer at
