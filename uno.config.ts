@@ -26,8 +26,8 @@ export default defineConfig({
     presetWebFonts({
       provider: 'bunny',
       fonts: {
-        sans: 'Inter',
-        mono: 'DM Mono',
+        sans: 'DM Sans',
+        mono: 'Quicksand',
       },
     }),
     presetTypography(),
