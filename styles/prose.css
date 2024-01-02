@@ -68,12 +68,13 @@ html:not(.dark) .shiki span {
 .prose a {
   font-weight: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  border-bottom: .15rem solid rgba(125, 125, 125, 0.3);
+  width: fit-content;
   transition: border 0.3s ease-in-out;
 }
 
 .prose a:hover {
-  border-bottom: 1px solid var(--fg);
+  border-bottom: .15rem solid var(--fg);
 }
 
 .prose a code {
@@ -430,7 +431,7 @@ h6:focus .header-anchor {
     padding-left: 0.5714286em;
 }
 .prose p {
-    margin-top: 1.25em;
+    margin-top: 0;
     margin-bottom: 1.25em;
 }
 .prose img {
