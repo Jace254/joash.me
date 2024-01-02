@@ -9,7 +9,6 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    /* pointer-events: none; */
     --h: min(96px,var(--page-top));
     position: sticky;
     height: var(--h);

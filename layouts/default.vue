@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div h-100dvh h-screen w-screen bg-base>
+  <div style="min-height: 100vh;" h-full w-screen bg-base>
     <TheNav />
     <slot />
     <TheFooter />

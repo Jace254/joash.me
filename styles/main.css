@@ -2,6 +2,10 @@
     color-scheme: dark;
 }
 
+#__nuxt {
+    min-height: 100%;
+}
+
 * {
     --at-apply: "border-border";
 }
@@ -10,7 +14,7 @@ html {
     font-variation-settings: normal;
 }
 body {
-    --at-apply: "bg-background text-foreground min-h-screen antialiased font-sans";
+    --at-apply: "bg-background text-foreground min-h-screen h-full antialiased font-sans";
     font-feature-settings:
         "rlig" 1,
         "calt" 1;
@@ -28,12 +32,16 @@ html {
     --at-apply: "w-[6px]";
     --at-apply: "h-[6px]";
 }
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
+    display: none;
+}
 
 ::-webkit-scrollbar-track {
     --at-apply: "!bg-transparent";
 }
 ::-webkit-scrollbar-thumb {
     --at-apply: "rounded-full !bg-muted-foreground/30 mr-2";
+    border: 5px solid transparent
 }
 
 /* Firefox */
