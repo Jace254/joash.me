@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: 'Joash Agesa - %s',
+      titleTemplate: '%s',
     },
   },
 })
