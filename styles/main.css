@@ -25,15 +25,15 @@ html {
 /* === Scrollbars === */
 
 ::-webkit-scrollbar {
-    --at-apply: "w-2";
-    --at-apply: "h-2";
+    --at-apply: "w-[6px]";
+    --at-apply: "h-[6px]";
 }
 
 ::-webkit-scrollbar-track {
-    --at-apply: "!bg-transparent absolute";
+    --at-apply: "!bg-transparent";
 }
 ::-webkit-scrollbar-thumb {
-    --at-apply: "rounded-sm !bg-muted-foreground/30 pr-2";
+    --at-apply: "rounded-full !bg-muted-foreground/30 mr-2";
 }
 
 /* Firefox */

@@ -4,11 +4,11 @@
       <Logo h-2em w-2em />
       <div flex-auto />
       <a class="select-none" title="Twitter" href="https://twitter.com/JoashMacenton" rel="noopener" target="_blank">
-        <div  i-carbon-logo-x text-1.5em/>
+        <div  i-carbon-logo-x text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;"/>
       </a>
       <ColorSchemeToggle />
-      <a class="select-none" title="Github" href="https://github.com/Jace254" rel="noopener" target="_blank">
-        <div  i-carbon-logo-github text-1.5em/>
+      <a class="select-none" title="Github" href="https://github.com/Jace254" rel="noopener" target="_blank" >
+        <div  i-carbon-logo-github text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;"/>
       </a>
     </nav>
   </header>
