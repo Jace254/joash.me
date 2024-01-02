@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { projects } from '@/lib'
+</script>
+
 <template>
   <main
     flex flex-col justify-center
@@ -17,18 +21,15 @@
         <h4 text-black dark:text-white>
           Craft
         </h4>
-        <a grid gap-y-1>
-          Example
-        </a>
       </div>
       <div flex flex-col gap-2 items-start class="slide-enter-content">
         <h4 text-black dark:text-white>
           Projects
         </h4>
-        <div grid gap-y-1>
-          <a href="https://100.joash.me" target="_blank" rel='noopener' flex items-center>100 <span i-ic-sharp-arrow-outward text-gray/></a>
-          <p>
-            100 day challenge on design concepts in web development
+        <div v-for="project, idx of projects" :key="idx" grid gap-y-1>
+          <a :href="project.link" target="_blank" rel="noopener" flex items-center>{{ project.name }} <span i-ic-sharp-arrow-outward text-gray /></a>
+          <p text=".9rem">
+            {{ project.description }}
           </p>
         </div>
       </div>
@@ -36,9 +37,6 @@
         <h4 text-black dark:text-white>
           Writing
         </h4>
-        <a grid gap-y-3>
-          Example
-        </a>
       </div>
     </div>
   </main>
