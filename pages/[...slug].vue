@@ -21,6 +21,7 @@ import { projects } from '@/lib'
         <h4 text-black dark:text-white>
           Craft
         </h4>
+        <span>Coming Soon</span>
       </div>
       <div flex flex-col gap-2 items-start class="slide-enter-content">
         <h4 text-black dark:text-white>
@@ -37,6 +38,7 @@ import { projects } from '@/lib'
         <h4 text-black dark:text-white>
           Writing
         </h4>
+        <span>Coming Soon</span>
       </div>
     </div>
   </main>
