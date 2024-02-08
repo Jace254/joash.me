@@ -19,4 +19,9 @@ export const projects: Project[] = [
     description: 'A text editor',
     link: 'https://sur.joash.me',
   },
+  {
+    name: 'Beeetle Chatbot',
+    description: 'A chatbot assitant for myself',
+    link: 'https://chatbot.joash.me'
+  }
 ]
