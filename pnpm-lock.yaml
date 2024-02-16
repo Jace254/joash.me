@@ -18,8 +18,8 @@ dependencies:
     specifier: ^4.12.2
     version: 4.12.2(vue@3.3.9)
   beeetle-chatbot-js:
-    specifier: ^1.0.13
-    version: 1.0.14(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
+    specifier: latest
+    version: 1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -3454,8 +3454,8 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
-  /beeetle-chatbot-js@1.0.14(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
-    resolution: {integrity: sha512-mhDp8OcTJtWq413+L78FtoltYTur+Bfs3i/kKdhbaw+e9KCP3OPIJKSQ2Y3jDWNLn30fIYdwXUT/qB+eDBsGfA==}
+  /beeetle-chatbot-js@1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
+    resolution: {integrity: sha512-bWcjYHuXAW81IlFDohj189EuapxikEgxvXlVpw7fvi+wCRjCskctsfPWP8C0UrSPS41OK7NcfEHM64za+iAzxw==}
     dependencies:
       '@unocss/reset': 0.58.5
       '@vueuse/core': 10.7.2(vue@3.4.16)
