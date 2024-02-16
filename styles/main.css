@@ -9,6 +9,7 @@
 * {
     --at-apply: "border-border";
 }
+
 html {
     -webkit-text-size-adjust: 100%;
     font-variation-settings: normal;
@@ -29,8 +30,8 @@ html {
 /* === Scrollbars === */
 
 ::-webkit-scrollbar {
-    --at-apply: "w-[6px]";
-    --at-apply: "h-[6px]";
+    --at-apply: "w-[.7rem]";
+    --at-apply: "h-[.7rem]";
 }
 ::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
     display: none;
@@ -40,7 +41,7 @@ html {
     --at-apply: "!bg-transparent";
 }
 ::-webkit-scrollbar-thumb {
-    --at-apply: "rounded-full !bg-muted-foreground/30 mr-2";
+    --at-apply: "rounded-[2px] !bg-foreground/10 mr-2";
     border: 5px solid transparent
 }
 

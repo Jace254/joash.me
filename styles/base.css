@@ -72,10 +72,6 @@ html.dark {
     height: 2px;
 }
 
-* {
-    scrollbar-color: var(--c-scrollbar) var(--c-bg);
-}
-
 .sponsorkit-avatar {
     cursor: pointer;
 }
