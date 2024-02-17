@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { projects } from '@/lib'
+
+useCustomHead('Joash\'s Personal Webiste')
 </script>
 
 <template>

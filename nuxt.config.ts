@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/color-mode', '@nuxt/content', 'radix-vue/nuxt'],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/color-mode', '@nuxt/content', 'radix-vue/nuxt', '@/modules/og'],
   colorMode: {
     classSuffix: '',
   },
@@ -25,6 +25,6 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: "vercel"
-  }
+    preset: 'vercel',
+  },
 })
