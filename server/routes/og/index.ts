@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { Resvg } from '@resvg/resvg-js'
 import satori from 'satori'
-import { useUrl } from '../../composables/url'
+import { useUrl } from '../../../composables/url'
 
 export default defineEventHandler(async (event) => {
   const url = useUrl()

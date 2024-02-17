@@ -24,4 +24,7 @@ export default defineNuxtConfig({
       titleTemplate: '%s',
     },
   },
+  nitro: {
+    preset: "vercel"
+  }
 })
