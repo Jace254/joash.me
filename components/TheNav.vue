@@ -13,6 +13,9 @@
       <a class="select-none" title="Resume" href="https://resume.joash.me" rel="noopener" target="_blank" >
         <div  i-majesticons-paper-fold-text-line text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;"/>
       </a>
+      <a class="select-none" title="Sponsor" href="https://github.com/sponsors/Jace254" rel="noopener" target="_blank" >
+        <div  i-ph-hand-heart-duotone text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;"/>
+      </a>
     </nav>
   </header>
 </template>
