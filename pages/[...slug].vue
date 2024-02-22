@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { projects } from '@/lib'
-
 </script>
 
 <template>

@@ -20,12 +20,15 @@ dependencies:
   '@vee-validate/zod':
     specifier: ^4.12.2
     version: 4.12.2(vue@3.3.9)
+  '@vercel/analytics':
+    specifier: ^1.2.0
+    version: 1.2.0(react@18.2.0)
   '@vercel/speed-insights':
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)(svelte@4.2.10)(vue-router@4.2.5)(vue@3.3.9)
   beeetle-chatbot-js:
-    specifier: latest
-    version: 1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
+    specifier: 1.0.19
+    version: 1.0.19(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -410,7 +413,6 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.23.5
-    dev: false
 
   /@babel/plugin-proposal-decorators@7.23.5(@babel/core@7.23.5):
     resolution: {integrity: sha512-6IsY8jOeWibsengGlWIezp7cuZEFzNlAghFpzh9wiZwhQ42/hRcPnY/QV9HJoKTlujupinSlnQPiEy/u2C1ZfQ==}
@@ -531,7 +533,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.23.5
-      '@babel/parser': 7.23.5
+      '@babel/parser': 7.23.9
       '@babel/types': 7.23.5
     dev: true
 
@@ -545,7 +547,7 @@ packages:
       '@babel/helper-function-name': 7.23.0
       '@babel/helper-hoist-variables': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.23.5
+      '@babel/parser': 7.23.9
       '@babel/types': 7.23.5
       debug: 4.3.4
       globals: 11.12.0
@@ -2878,6 +2880,21 @@ packages:
       - vue
     dev: false
 
+  /@vercel/analytics@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-Q9hduY6+i73Is1m57Y3OlawleeYVi4cvuh/0j6IwmSndMOE4+BKkMwjnwz+7xnqfZCanipIG6+q+zHalH9X0Zg==}
+    peerDependencies:
+      next: '>= 13'
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      server-only: 0.0.1
+    dev: false
+
   /@vercel/nft@0.24.4:
     resolution: {integrity: sha512-KjYAZty7boH5fi5udp6p+lNu6nawgs++pHW+3koErMgbRkkHuToGX/FwjN5clV1FcaM3udfd4zW/sUapkMgpZw==}
     engines: {node: '>=16'}
@@ -2967,7 +2984,7 @@ packages:
     dependencies:
       '@babel/types': 7.23.5
       '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
-      '@vue/compiler-sfc': 3.3.9
+      '@vue/compiler-sfc': 3.4.16
       ast-kit: 0.11.2
       local-pkg: 0.5.0
       magic-string-ast: 0.3.0
@@ -3015,7 +3032,6 @@ packages:
       entities: 4.5.0
       estree-walker: 2.0.2
       source-map-js: 1.0.2
-    dev: false
 
   /@vue/compiler-dom@3.3.9:
     resolution: {integrity: sha512-nfWubTtLXuT4iBeDSZ5J3m218MjOy42Vp2pmKVuBKo2/BLcrFUX8nCSr/bKRFiJ32R8qbdnnnBgRn9AdU5v0Sg==}
@@ -3028,7 +3044,6 @@ packages:
     dependencies:
       '@vue/compiler-core': 3.4.16
       '@vue/shared': 3.4.16
-    dev: false
 
   /@vue/compiler-sfc@3.3.9:
     resolution: {integrity: sha512-wy0CNc8z4ihoDzjASCOCsQuzW0A/HP27+0MDSSICMjVIFzk/rFViezkR3dzH+miS2NDEz8ywMdbjO5ylhOLI2A==}
@@ -3056,7 +3071,6 @@ packages:
       magic-string: 0.30.7
       postcss: 8.4.35
       source-map-js: 1.0.2
-    dev: false
 
   /@vue/compiler-ssr@3.3.9:
     resolution: {integrity: sha512-NO5oobAw78R0G4SODY5A502MGnDNiDjf6qvhn7zD7TJGc8XDeIEw4fg6JU705jZ/YhuokBKz0A5a/FL/XZU73g==}
@@ -3069,7 +3083,6 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.4.16
       '@vue/shared': 3.4.16
-    dev: false
 
   /@vue/devtools-api@6.5.1:
     resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
@@ -3146,7 +3159,6 @@ packages:
 
   /@vue/shared@3.4.16:
     resolution: {integrity: sha512-HKCjeaxR+R95dCw1BDaytcHdlzZj9lxj7RlFnxWtcKq670t8oSeMsbPlkzkNc2V6IUzHaMtUxdBcdREAhb+7NA==}
-    dev: false
 
   /@vueuse/core@10.6.1(vue@3.3.9):
     resolution: {integrity: sha512-Pc26IJbqgC9VG1u6VY/xrXXfxD33hnvxBnKrLlA2LJlyHII+BSrRoTPJgGYq7qZOu61itITFUnm6QbacwZ4H8Q==}
@@ -3559,7 +3571,7 @@ packages:
     resolution: {integrity: sha512-Q0DjXK4ApbVoIf9GLyCo252tUH44iTnD/hiJ2TQaJeydYWSpKk0sI34+WMel8S9Wt5pbLgG02oJ+gkgX5DV3sQ==}
     engines: {node: '>=16.14.0'}
     dependencies:
-      '@babel/parser': 7.23.5
+      '@babel/parser': 7.23.9
       '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
       pathe: 1.1.1
     transitivePeerDependencies:
@@ -3570,7 +3582,7 @@ packages:
     resolution: {integrity: sha512-kbL7ERlqjXubdDd+szuwdlQ1xUxEz9mCz1+m07ftNVStgwRb2RWw+U6oKo08PAvOishMxiqz1mlJyLl8yQx2Qg==}
     engines: {node: '>=16.14.0'}
     dependencies:
-      '@babel/parser': 7.23.5
+      '@babel/parser': 7.23.9
       '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
       pathe: 1.1.1
     transitivePeerDependencies:
@@ -3633,8 +3645,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /beeetle-chatbot-js@1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
-    resolution: {integrity: sha512-bWcjYHuXAW81IlFDohj189EuapxikEgxvXlVpw7fvi+wCRjCskctsfPWP8C0UrSPS41OK7NcfEHM64za+iAzxw==}
+  /beeetle-chatbot-js@1.0.19(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
+    resolution: {integrity: sha512-xTFM6mMqR/JVIOM1uXKhTm+n2T3Z/cRYukHFPDUF5dalvaA5CW417r4skhymDocSQUVXmvBKB3s2NB0PduVpGg==}
     dependencies:
       '@unocss/reset': 0.58.5
       '@vueuse/core': 10.7.2(vue@3.4.16)
@@ -6380,7 +6392,7 @@ packages:
     resolution: {integrity: sha512-0shqecEPgdFpnI3AP90epXyxZy9g6CRZ+SZ7BcqFwYmtFEnZ1jpevcV5HoyVnlDS9gCnc1UIg3Rsvp3Ci7r8OA==}
     engines: {node: '>=16.14.0'}
     dependencies:
-      magic-string: 0.30.5
+      magic-string: 0.30.7
     dev: true
 
   /magic-string@0.30.5:
@@ -8943,6 +8955,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
