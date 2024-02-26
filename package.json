@@ -20,7 +20,7 @@
     "@vee-validate/zod": "^4.12.2",
     "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
-    "beeetle-chatbot-js": "1.0.19",
+    "beeetle-chatbot-js": "1.0.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-vue-next": "^0.294.0",
