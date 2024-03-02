@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const isDark = useDark()
+const colorMode = useColorMode()
 
 
 function toggleDark(event: MouseEvent) {
@@ -8,7 +8,7 @@ function toggleDark(event: MouseEvent) {
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
-    isDark.value = !isDark.value
+    colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
     return
   }
 
@@ -20,7 +20,7 @@ function toggleDark(event: MouseEvent) {
   )
   // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
-    isDark.value = !isDark.value
+    colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
     await nextTick()
   })
   transition.ready
@@ -31,14 +31,14 @@ function toggleDark(event: MouseEvent) {
       ]
       document.documentElement.animate(
         {
-          clipPath: isDark.value
+          clipPath:  colorMode.value === 'dark'
             ? [...clipPath].reverse()
             : clipPath,
         },
         {
           duration: 400,
           easing: 'ease-out',
-          pseudoElement: isDark.value
+          pseudoElement:  colorMode.value === 'dark'
             ? '::view-transition-old(root)'
             : '::view-transition-new(root)',
         },
