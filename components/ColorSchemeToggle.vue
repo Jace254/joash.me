@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 const colorMode = useColorMode()
 
-
 function toggleDark(event: MouseEvent) {
   // @ts-expect-error experimental API
   const isAppearanceTransition = document.startViewTransition
@@ -31,14 +30,14 @@ function toggleDark(event: MouseEvent) {
       ]
       document.documentElement.animate(
         {
-          clipPath:  colorMode.value === 'dark'
+          clipPath: colorMode.value === 'dark'
             ? [...clipPath].reverse()
             : clipPath,
         },
         {
           duration: 400,
           easing: 'ease-out',
-          pseudoElement:  colorMode.value === 'dark'
+          pseudoElement: colorMode.value === 'dark'
             ? '::view-transition-old(root)'
             : '::view-transition-new(root)',
         },
