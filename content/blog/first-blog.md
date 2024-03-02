@@ -1,6 +1,6 @@
 # My first blog
 
-Welcome to my first blog post on [joash.me](http://joash.me/). It took me some time to venture into blogging, and I'm excited to finally get started.
+Welcome to my first blog post on [joash.me](/). It took me some time to venture into blogging, and I'm excited to finally get started.
 
 That said, deciding on my first post wasn't easy. I brainstormed a list of potential topics for my personal website, but planning only gets you so far.
 

@@ -3,12 +3,14 @@ import { cn } from '@/utils'
 
 const router = useRouter()
 
+
 const currentPath = computed(() => router.currentRoute.value.path)
 
 const { width } = useWindowSize()
 const isMobile = ref(width.value <= 600)
 const menuOpen = ref(false)
 const cartOpen = ref(false)
+
 
 watch(width, (w) => {
   if (w <= 600)
@@ -64,16 +66,18 @@ function closeMenu() {
   >
     <div class="floating-nav-tab">
       <button title="Menu" class="hover:bg-active p-1 px-2 rounded-md" @click="toggleMenu">
-        <div v-if="isMobile" class="i-ph-list text-1.5em " />
-        <span v-else>Menu</span>
+        <div class="max-md:i-ph-list text-1.5em " >
+          <span class="text-[16px] flex">Menu</span>
+        </div>
       </button>
       <NuxtLink class="logo" href="/">
         <Logo h-1.5em w-1.5em />
       </NuxtLink>
       <button title="Cart" class=" hover:bg-active p-1 px-2 rounded-md" @click="toggleCart">
-        <div v-if="isMobile" class="i-ph-shopping-cart-simple-light text-1.5em " />
-        <span v-else>Cart</span>
-        <div class="h-[6px] w-[6px] border border-gray:20 inline-block rounded-full ml-0.4em" />
+        <div class="max-md:i-ph-shopping-cart-simple-light text-1.5em ">
+          <span class="text-[16px] flex ">Cart</span>
+        </div>
+        <div class="h-[6px] w-[6px] border border-muted-foreground:70 inline-block rounded-full ml-0.4em" />
       </button>
     </div>
     <div class="interactive-menu">
