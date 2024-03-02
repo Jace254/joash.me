@@ -3,12 +3,6 @@ import { projects } from '@/lib'
 </script>
 
 <template>
-  <main
-    flex flex-col justify-center
-    items-center
-    w-full py="128px"
-    style="min-height: calc(100vh - 48px);" relative
-  >
     <article
       w-full h-full max-w="var(--content-width)"
       class="slide-enter-content prose"
@@ -41,5 +35,4 @@ import { projects } from '@/lib'
         <span>Coming Soon</span>
       </div>
     </div>
-  </main>
 </template>

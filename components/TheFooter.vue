@@ -21,7 +21,7 @@ const randomQuote: string = quotes[Math.floor(Math.random() * quotes.length)]
     gap-2
     h="48px"
     text="~ 12px #707070"
-    absolute bottom-0 z-20 py="24px"
+    relative z-20 py="24px"
   >
     <div font-thin>
       {{ randomQuote }}
