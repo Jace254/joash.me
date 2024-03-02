@@ -86,7 +86,7 @@ function closeMenu() {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-solar-home-smile-outline />
+            <div i-solar-home-smile-outline text-1.2em />
             Home
           </NuxtLink>
         </li>
@@ -98,7 +98,7 @@ function closeMenu() {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-carbon-ibm-cloud-projects />
+            <div i-carbon-ibm-cloud-projects text-1.2em />
             Projects
           </NuxtLink>
         </li>
@@ -110,7 +110,7 @@ function closeMenu() {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-system-uicons-write />
+            <div i-system-uicons-write text-1.2em />
             Blog
           </NuxtLink>
         </li>
@@ -122,7 +122,7 @@ function closeMenu() {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-ph-storefront-thin />
+            <div i-ph-storefront-thin text-1.2em />
             Store
           </NuxtLink>
         </li>
