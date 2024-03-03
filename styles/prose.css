@@ -359,7 +359,7 @@ h6:focus .header-anchor {
 .prose a code {
     --at-apply: 'text-[#111827] dark:text-gray-200'
 }
-/* .prose pre {
+.prose pre {
     overflow-x: auto;
     font-size: 0.875em;
     line-height: 1.7142857;
@@ -370,7 +370,7 @@ h6:focus .header-anchor {
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
     padding-left: 1.1428571em;
-} */
+}
 
 .prose pre code {
     background-color: transparent;
@@ -381,6 +381,8 @@ h6:focus .header-anchor {
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
+    display: flex;
+    flex-direction: column;
 }
 .prose pre code::before {
     content: none;
