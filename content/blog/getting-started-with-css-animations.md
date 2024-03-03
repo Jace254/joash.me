@@ -88,16 +88,6 @@ This is just a simple example you can further create a more impactful animation 
 
 So let's update our previous animation to look like this:
 
-```css
-.element {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    transition: width 2s;
-    transition-timing-function: ease-in;
-}
-```
-
 <div class="element-2">
 Hover me
 </div>
@@ -115,15 +105,11 @@ Hover me
     transition-timing-function: ease-in;
 }
 .element-2:hover {
-   width: 200px
+    width: 200px
 }
 </style>
 
 <br/>
-
-You'll notice that the animation starts out slower than it ends.
-
-And finally you can delay the transition using `transition-delay`. This just lags the animation from starting and gives an effect of anticipation.
 
 ```css
 .element {
@@ -132,9 +118,12 @@ And finally you can delay the transition using `transition-delay`. This just lag
     background-color: #1E5CC2;
     transition: width 2s;
     transition-timing-function: ease-in;
-    transition-delay: 1s
 }
 ```
+
+You'll notice that the animation starts out slower than it ends.
+
+And finally you can delay the transition using `transition-delay`. This just lags the animation from starting and gives an effect of anticipation.
 
 <div class="element-3">
 Hover me
@@ -154,13 +143,24 @@ Hover me
     transition-delay: 1s
 }
 .element-3:hover {
-   width: 200px
+    width: 200px
 }
 </style>
 
 <br/>
 
-You can short-hand this properties into one line on the transition prop:
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+```
+
+You can short-hand these properties into one line on the transition prop:
 
 ```css
 .element {
@@ -171,7 +171,6 @@ You can short-hand this properties into one line on the transition prop:
 }
 ```
 
-There's many other things that you can animate using this method. But that pretty much covers how transitions are done using css.
-
+There's many other things that you can animate using this method. But that pretty much covers how transitions are done using CSS.
 
 ### Keyframes
