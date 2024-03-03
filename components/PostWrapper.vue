@@ -80,7 +80,7 @@ onMounted(() => {
   </ClientOnly>
   <div
     v-if="frontmatter.display ?? frontmatter.title"
-    class="prose my-auto mb-8 max-w-[var(--content-width) w-full"
+    class="prose my-auto mb-8 max-w-[var(--content-width) w-full md:px-0 px-7"
     :class="[frontmatter.wrapperClass]"
   >
     <h1 class="mb-0 slide-enter-50">
@@ -123,7 +123,7 @@ onMounted(() => {
   >
     <slot />
   </article>
-  <div v-if="route.path !== '/'" class="prose m-auto max-w-[var(--content-width) w-full mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
+  <div v-if="route.path !== '/'" class="prose m-auto max-w-[var(--content-width) w-full md:px-0 px-7 mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
     <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
