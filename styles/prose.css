@@ -715,7 +715,7 @@ h6:focus .header-anchor {
 
 .prose :where(pre) {
   font-family: 'Courier New', monospace;
-  --uno: border border-base bg-black:70;
+  --uno: border border-base dark:bg-black bg-gray:20;
   overflow-x: auto;
   padding: 10px;
 }
