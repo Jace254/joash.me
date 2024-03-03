@@ -18,8 +18,11 @@ useCustomHead(`Joash Agesa | ${capitalizeFirstLetter(route.path.replace('/', '')
   <div style="min-height: 100vh;" h-full w-screen bg-base>
     <TheNav />
     <main
-      flex flex-col justify-center
-      items-center
+      flex flex-col 
+      md:items-center
+      md:ml-0
+      items-left
+      ml="30px"
       w-full py="128px"
       style="min-height: calc(100vh - 48px);" relative
     >
