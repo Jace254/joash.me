@@ -709,13 +709,6 @@ h6:focus .header-anchor {
     margin-bottom: 0;
 }
 
-.prose :where(h1 a, h2 a, h3 a, h4 a) {
-  border-bottom: none !important;
-  text-decoration: none !important;
-  color: inherit;
-  font-weight: inherit;
-}
-
 .prose :where(pre) {
   font-family: 'Courier New', monospace;
   --uno: border border-base dark:bg-black bg-gray:20;

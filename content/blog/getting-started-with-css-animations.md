@@ -20,95 +20,158 @@ CSS offers a lightweight and efficient API that is simple to use and supported b
 
 ## Where should you start?
 
-I won't make the assumption that everyone reading this blog post knows a thing or two about animation, so let's get you started here. Otherwise you can jump to [this section](/blog/getting-started-with-css-animation#).
+First let's start with the basics. What can we animate ?
 
-There are a lot of concepts that go into animation. However, in this post I'll focus on a few major ones. You can later on continue your research to learn the different [animation principles](https://www.animaker.com/hub/12-principles-of-animation/).
+This is a very important question, and from my experience, anything that can be styled, can be animated. Be it color, font, underlines, size, you name them. I also stand to be corrected.
 
-So let's get started. You may find some CSS terms new in the list below but I'll make everything clear as we move forward.
-Heres a list of animation principles I'll cover:
+But in this post I'll focus on only three things: _*_Scale_*_, _*_Rotation_*_ and _*_Position_*_. These are the transformation properties of an element. I'll also group my CSS animations into two, _Transition Animations_ and _Keyframe Animations_.
 
-1. **Timing**: Timing in CSS animations refers to the duration and delay of an animation. You can control timing using the `animation-duration` property to set how long an animation should take, and `animation-delay` to specify a delay before an animation starts.
+### Transition Animations
 
-    ```css
-    .element {
-        /* Animation lasts for 2 seconds */
-        animation-duration: 2s; 
-        /* Animation starts after a 1-second delay */
-        animation-delay: 1s; 
-        /* Timing function (e.g., ease, linear) */
-        animation-timing-function: ease;
-    }
-    ```
+These animations allow you to change propery values smoothly over a specified duration. To create a transition you must specify the property you want to add the effect to, and the duration.
 
-2. **Squash and Stretch**:
-    To achieve squash and stretch effects, you can use CSS transforms like `scale` to change the size of an element during animation.
+> Example
 
-    ```css
-    @keyframes squash-stretch {
-        0% { transform: scale(1); }
-        /* Squash effect */
-        50% { transform: scale(0.8); }
-        /* Stretch effect */
-        100% { transform: scale(1.2); } 
-    }
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    transition: width 2s
+}
+```
 
-    .element {
-        /* Applies the animation infinitely */
-        animation: squash-stretch 1s infinite alternate; 
-    }
-    ```
+The transition effect of this rule will take effect when the specified property changes value. Now let's set a new value for the width when the element is hovered.
 
-3. **Anticipation**: Anticipation involves preparing the viewer for an upcoming action. You can use keyframes to animate an element slightly in the opposite direction before the main action.
+```css
+.element:hover {
+   width: 200px
+}
+```
 
-    ```css
-    @keyframes anticipation {
-        0% { transform: translateX(0); }
-        /* Anticipating movement to the left */
-        20% { transform: translateX(-10px); }
-        /* Main movement */
-        100% { transform: translateX(100px); } 
-    }
+You'll notice that the element takes 2 seconds to animate to it's new width.
 
-    .element {
-        /* Animation plays once and stops at the end */
-        animation: anticipation 1s forwards; 
-    }
-    ```
+You'll get something that looks like this:
 
-4. **Follow Through and Overlapping Action**:
-    To create follow-through and overlapping action, you can animate different parts of an element with slight delays or different timing functions.
 
-    ```css
-    .element-part1 {
-        animation: follow-through 1s ease forwards;
-    }
 
-    .element-part2 {
-        animation: overlapping-action 1s ease forwards;
-    }
-    ```
+<div class="element">
+Hover me
+</div>
 
-5. **Arcs**:
-    Animating along arcs can be achieved by combining multiple transforms like `translate` and `rotate`.
+<style>
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s
+}
+.element:hover {
+   width: 200px
+}
+</style>
 
-    ```css
-    @keyframes arc {
-        0% { transform: translate(0, 0) rotate(0deg); }
-        /* Midpoint of the arc */
-        50% { transform: translate(50px, -100px) rotate(45deg); } 
-        100% { transform: translate(100px, 0) rotate(90deg); }
-    }
+<br/>
 
-    .element {
-        animation: arc 2s ease-in-out forwards;
-    }
-    ```
+This is just a simple example you can further create a more impactful animation with the use of a `transition-timing-function`. This affects how an animation plays out in terms of speed. There's various _timing functions_ that can be used: 
 
-6. **Slow In and Slow Out**:
-    Slow in and slow out effects can be achieved using different timing functions such as `ease-in` and `ease-out`.
+- <span style="color:orange">ease</span> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+- <span style="color:orange">linear</span> - specifies a transition effect with the same speed from start to end
+- <span style="color:orange">ease-in</span> - specifies a transition effect with a slow start
+- <span style="color:orange">ease-out</span> - specifies a transition effect with a slow end
+- <span style="color:orange">ease-in-out</span> - specifies a transition effect with a slow start and end
+- <span style="color:orange">cubic-bezier(n,n,n,n)</span> - lets you define your own values in a cubic-bezier function
 
-    ```css
-    .element {
-        animation: slow-in-out 2s ease-in-out forwards;
-    }
-    ```
+So let's update our previous animation to look like this:
+
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+```
+
+<div class="element-2">
+Hover me
+</div>
+
+<style>
+.element-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+.element-2:hover {
+   width: 200px
+}
+</style>
+
+<br/>
+
+You'll notice that the animation starts out slower than it ends.
+
+And finally you can delay the transition using `transition-delay`. This just lags the animation from starting and gives an effect of anticipation.
+
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+```
+
+<div class="element-3">
+Hover me
+</div>
+
+<style>
+.element-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+.element-3:hover {
+   width: 200px
+}
+</style>
+
+<br/>
+
+You can short-hand this properties into one line on the transition prop:
+
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    transition: width 2s ease-in 1s
+}
+```
+
+There's many other things that you can animate using this method. But that pretty much covers how transitions are done using css.
+
+
+### Keyframes
