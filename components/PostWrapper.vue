@@ -21,7 +21,7 @@ onMounted(() => {
       const el = document.querySelector(decodeURIComponent(location.hash))
       if (el) {
         const rect = el.getBoundingClientRect()
-        const y = window.scrollY + rect.top - 40
+        const y = window.scrollY + rect.top - 140
         window.scrollTo({
           top: y,
           behavior: 'smooth',
@@ -117,8 +117,8 @@ onMounted(() => {
   <article
     ref="content" w-full h-full
     max-w="var(--content-width)"
-    class="slide-enter-content prose" md:px-0 px-7 relative
-    block
+    class="slide-enter-content prose"
+    md:px-0 px-7 relative block
     :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]"
   >
     <slot />

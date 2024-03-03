@@ -27,12 +27,13 @@
     "lucide-vue-next": "^0.294.0",
     "radix-vue": "^1.2.3",
     "satori": "^0.10.13",
+    "theme-vitesse": "^0.7.5",
     "vee-validate": "^4.12.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.2.2",
-    "@nuxt/content": "^2.9.0",
+    "@nuxt/content": "2.9.0",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
     "@unocss/nuxt": "^0.58.0",

@@ -16,10 +16,7 @@ onMounted(() => {
     <TheNav />
     <main
       flex flex-col
-      md:items-center
-      md:ml-0
-      items-left
-      ml="30px"
+      items-center
       w-full py="128px"
       style="min-height: calc(100vh - 48px);" relative
     >
