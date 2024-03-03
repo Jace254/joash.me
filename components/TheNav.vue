@@ -119,7 +119,7 @@ onBeforeUnmount(() => {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-carbon-ibm-cloud-projects text-1.2em />
+            <div i-solar-lightbulb-outline text-1.2em />
             Projects
           </NuxtLink>
         </li>
