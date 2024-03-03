@@ -9,16 +9,13 @@ onMounted(() => {
   })
 })
 
-const route = useRoute()
-
-useCustomHead(`Joash Agesa | ${capitalizeFirstLetter(route.path.replace('/', ''))}`)
 </script>
 
 <template>
   <div style="min-height: 100vh;" h-full w-screen bg-base>
     <TheNav />
     <main
-      flex flex-col 
+      flex flex-col
       md:items-center
       md:ml-0
       items-left

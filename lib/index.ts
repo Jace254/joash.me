@@ -15,13 +15,13 @@ export const projects: Project[] = [
     link: 'https://code.joash.me',
   },
   {
+    name: 'Beeetle Chatbot',
+    description: 'A chatbot assitant for myself',
+    link: 'https://chatbot.joash.me',
+  },
+  {
     name: 'SurNote',
     description: 'A text editor',
     link: 'https://sur.joash.me',
   },
-  {
-    name: 'Beeetle Chatbot',
-    description: 'A chatbot assitant for myself',
-    link: 'https://chatbot.joash.me'
-  }
 ]

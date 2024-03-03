@@ -9,9 +9,6 @@ onMounted(() => {
   })
 })
 
-const route = useRoute()
-
-useCustomHead(`Joash Agesa | ${capitalizeFirstLetter(route.path.replace('/', ''))}`)
 </script>
 
 <template>
