@@ -1,4 +1,12 @@
-# My first blog
+---
+title: My first blog
+date: 2024-03-02T23:00:00Z
+lang: en
+duration: 23secs
+description: My first blog ever
+---
+
+
 
 Welcome to my first blog post on [joash.me](/). It took me some time to venture into blogging, and I'm excited to finally get started.
 

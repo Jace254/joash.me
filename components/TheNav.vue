@@ -3,14 +3,13 @@ import { cn } from '@/utils'
 
 const router = useRouter()
 
-
 const currentPath = computed(() => router.currentRoute.value.path)
 
 const { width } = useWindowSize()
 const isMobile = ref(width.value <= 600)
 const menuOpen = ref(false)
 const cartOpen = ref(false)
-
+const menu = ref()
 
 watch(width, (w) => {
   if (w <= 600)
@@ -37,7 +36,24 @@ function toggleCart() {
 
 function closeMenu() {
   menuOpen.value = false
+  cartOpen.value = false
 }
+
+function handleClickOutside(event: Event) {
+  // Check if the click occurred outside the element
+  if (!menu.value.contains(event.target)) {
+    // The click occurred outside the element, handle it here
+    closeMenu()
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 </script>
 
 <template>
@@ -61,12 +77,13 @@ function closeMenu() {
     </nav>
   </header>
   <div
-    :class="cn('floating-nav', menuOpen || cartOpen ? 'floating-nav-open' : '', menuOpen ? ' menu-is-open menu-active' : '')"
+    ref="menu"
+    :class="cn('floating-nav max-md:top-4.5em top-1.5em', menuOpen || cartOpen ? 'floating-nav-open' : '', menuOpen ? ' menu-is-open menu-active' : '')"
     bg-faded
   >
     <div class="floating-nav-tab">
       <button title="Menu" class="hover:bg-active p-1 px-2 rounded-md" @click="toggleMenu">
-        <div class="max-md:i-ph-list text-1.5em " >
+        <div class="max-md:i-ph-list text-1.5em ">
           <span class="text-[16px] flex">Menu</span>
         </div>
       </button>
@@ -126,7 +143,7 @@ function closeMenu() {
             flex gap-2
             @click="closeMenu"
           >
-            <div i-ph-storefront-thin text-1.2em />
+            <div i-ph-storefront-duotone text-1.2em />
             Store
           </NuxtLink>
         </li>
@@ -138,7 +155,7 @@ function closeMenu() {
 <style>
 .floating-nav {
   position: fixed;
-  top: 4.5em;
+
   left: 50%;
   z-index: 100;
   padding: 0.6em;
