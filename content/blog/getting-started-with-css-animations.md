@@ -2,7 +2,7 @@
 title: Getting Started with CSS Animations
 date: 2024-03-04T16:33:11Z
 description: A guide on understanding animations with pure css
-duration: In Progress
+duration: 5 min
 ---
 
 <style>
