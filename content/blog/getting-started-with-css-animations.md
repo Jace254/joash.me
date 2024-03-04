@@ -296,7 +296,7 @@ Let's talk about the rest,
 
 ```css line=10
 .element {
-    /* rest */
+    /* other element styles */
     animation: 
         cool-animation 
         3000ms 
@@ -376,11 +376,7 @@ The interesting part, though, is that we can set it to `alternate`, which ping-p
 
 ```css
 .element {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
+    /* other element styles */
     animation:
      cool-animation
      3000ms
@@ -405,11 +401,7 @@ You notice that after the animation is done it resets the element back to it's o
 
 ```css
 .element {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
+    /* other element styles  */
     animation:
      cool-animation
      3000ms
