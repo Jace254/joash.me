@@ -3,8 +3,105 @@ title: Getting Started with CSS Animations
 date: 2024-03-04T16:33:11Z
 description: A guide on understanding animations with pure css
 duration: In Progress
-draft: true
 ---
+
+<style>
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s
+}
+.element:hover {
+   width: 200px
+}
+
+.element-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+.element-2:hover {
+    width: 200px
+}
+.element-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+.element-3:hover {
+    width: 200px
+}
+
+.element-4 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+     cool-animation
+     3000ms
+     ease-in-out
+     infinite
+     alternate
+     forwards;
+}
+
+.element-5 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+        cool-animation
+        3000ms
+        ease-in-out
+}
+
+.element-6 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+        cool-animation
+        3000ms
+        ease-in-out
+        forwards
+}
+
+@keyframes cool-animation {
+    0% {
+        transform:  scale(0.5) translateY(-100px) rotate(20deg);
+    }
+    100% {
+        transform: scale(1.5) translateY(50px) rotate(-20deg);
+    }
+}
+</style>
 
 I've been experimenting with CSS animations in the past 3 months. I realized that there's so much that can be done with just pure CSS, without the need for 3rd party libraries. Before I'd just go online and find a library that handles animations, but you will find that lots of them are not framework agnostic. So I decided to do some research and the answer was really in front of me the whole time. CSS !
 
@@ -59,24 +156,7 @@ You'll get something that looks like this:
 Hover me
 </div>
 
-<style>
-.element {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: width 2s
-}
-.element:hover {
-   width: 200px
-}
-</style>
-
-<br/>
+---
 
 This is just a simple example you can further create a more impactful animation with the use of a `transition-timing-function`. This affects how an animation plays out in terms of speed. There's various _timing functions_ that can be used: 
 
@@ -93,25 +173,7 @@ So let's update our previous animation to look like this:
 Hover me
 </div>
 
-<style>
-.element-2 {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: width 2s;
-    transition-timing-function: ease-in;
-}
-.element-2:hover {
-    width: 200px
-}
-</style>
-
-<br/>
+---
 
 ```css
 .element {
@@ -131,26 +193,7 @@ And finally you can delay the transition using `transition-delay`. This just lag
 Hover me
 </div>
 
-<style>
-.element-3 {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    transition: width 2s;
-    transition-timing-function: ease-in;
-    transition-delay: 1s
-}
-.element-3:hover {
-    width: 200px
-}
-</style>
-
-<br/>
+---
 
 ```css
 .element {
@@ -208,41 +251,13 @@ So keyframes are defined with the `@keyframes` selector followed by the name of 
 
 This time let's start with a complete animation sequence:
 
-<br/>
-<br/>
-<br/>
+---
 
 <div class="element-4"></div>
 
-<style>
-.element-4 {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
-    animation:
-     cool-animation
-     3000ms
-     ease-in-out
-     infinite
-     alternate
-     forwards;
-}
+---
 
-@keyframes cool-animation {
-    0% {
-        transform:  scale(0.5) translateY(-100px) rotate(20deg);
-    }
-    100% {
-        transform: scale(1.5) translateY(50px) rotate(-20deg);
-    }
-}
-</style>
-
-<br/>
-<br/>
-<br/>
+---
 
 ```html
 <div class="element">
@@ -281,11 +296,7 @@ Let's talk about the rest,
 
 ```css line=10
 .element {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
+    /* rest */
     animation: 
         cool-animation 
         3000ms 
@@ -296,5 +307,102 @@ Let's talk about the rest,
 }
 ```
 
-The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly, the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-animations).
+The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly,has the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-animations).
 
+You can define it separately:
+```css 
+animation-timing-function: ease-in-out
+```
+
+The next property is the `animation-iteration-count`. This is what determines how many times the animation is going to run, you can give it an integer value or make it `infinite` to run forever.
+
+```css
+animation-iteration-count: infinite
+```
+
+You probably noticed we are able to define the steps in the animation timeline using the percentage to completion. You can customize this further to have as many steps as possible to make your animation do all sorts of magic.
+
+```css
+ @keyframes multi-step {
+    0% {
+      /* transform something */
+    }
+    25% {
+      /* transform it again */
+    }
+    50% {
+      /* transform it differently */
+    }
+    100% {
+      /* transform it back to it's initial state*/
+    }
+  }
+```
+
+This gives you control on each and every motion the animated element makes. Honestly you could become an animator at this point, right ?
+
+Let's wrap this up with the last two values, `alternate` and `forwards`. 
+
+`animation-direction` controls the order of the sequence. The default value is `normal`, going from 0% to 100% over the course of the specified duration.
+
+We can also set it to `reverse`. This will play the animation backwards, going from 100% to 0%.
+
+The interesting part, though, is that we can set it to `alternate`, which ping-pongs between normal and reverse on subsequent iterations.
+
+`animation-fill-mode` lets us persist the final value from the animation, forwards in time. Normally when you run an animation like this,
+
+<br/>
+<br/>
+<br/>
+
+<div class="flex items-center justify-between">
+<div class="element-5" id="element-5"></div>
+<button class="p2 border border-border rounded-md" id="replay">
+<span class="i-material-symbols-replay"></span>Replay
+</button>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+```css
+.element-4 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+     cool-animation
+     3000ms
+     ease-in-out
+}
+
+@keyframes cool-animation {
+    0% {
+        transform:  scale(0.5) translateY(-100px) rotate(20deg);
+    }
+    100% {
+        transform: scale(1.5) translateY(50px) rotate(-20deg);
+    }
+}
+```
+
+You notice that after the animation is done it resets the element back to it's original position defined in it's styling. Applying an `animation-fill-mode` of `forwards` ensures your element persists it's position after the animation is complete.
+
+---
+
+<div class="flex items-center justify-between">
+<div class="element-6" id="element-6"></div>
+<button class="p2 border border-border rounded-md" id="replay-2">
+<span class="i-material-symbols-replay"></span>Replay
+</button>
+</div>
+
+---
+
+---
+
+
+If you've made it this far, Congratulations. You can finally start doing awesome animations with CSS. This is just the beginning of your journey. Keep on improving those skills. Catch you next time.

@@ -348,12 +348,16 @@ h6:focus .header-anchor {
     color: var(--fg-deep);
     font-weight: 600;
     font-size: 0.875em;
+    padding: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    border-radius: 6px;
+    --at-apply: 'bg-faded'
 }
 .prose code::before {
-    content: "`";
+    content: "";
 }
 .prose code::after {
-    content: "`";
+    content: "";
 }
 
 .prose a code {
