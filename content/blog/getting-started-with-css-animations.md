@@ -26,7 +26,7 @@ This is a very important question, and from my experience, anything that can be 
 
 But in this post I'll focus on only three things: _*_Scale_*_, _*_Rotation_*_ and _*_Position_*_. These are the transformation properties of an element. I'll also group my CSS animations into two, _Transition Animations_ and _Keyframe Animations_.
 
-### Transition Animations
+## Transition Animations
 
 These animations allow you to change propery values smoothly over a specified duration. To create a transition you must specify the property you want to add the effect to, and the duration.
 
@@ -173,4 +173,23 @@ You can short-hand these properties into one line on the transition prop:
 
 There's many other things that you can animate using this method. But that pretty much covers how transitions are done using CSS.
 
-### Keyframes
+## Keyframes
+
+Keyframes are a special sauce to CSS animations. They can do so much more with very minimal setup.
+
+They define a sequence of styles to be applied at various points of an animation timeline. They give us the ability to create dynamic animations like continuous loops, multi-step animations and advanced effects. At this point, your imagination is the limit.
+
+I'd like to go on and tell you how great `@keyframes` are, but let me just show you 😄.
+
+So keyframes are defined with the `@keyframes` selector followed by the name of the animation, like so:
+
+```css
+@keyframes my-animation {
+    0%: {
+        /* apply properties to animate  */
+    }
+    100%: {
+        /* apply final values for the properties */
+    }
+}
+```

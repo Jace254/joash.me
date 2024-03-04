@@ -88,9 +88,9 @@ onMounted(() => {
     </h1>
     <p
       v-if="frontmatter.date"
-      class="opacity-50 !-mt-6 slide-enter-50"
+      class="opacity-50 !-mt-6 slide-enter-50 flex gap-2"
     >
-      {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
+      {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration" flex items-center gap-2>·<div i-material-symbols-timer-outline-rounded/> {{ frontmatter.duration }}</span>
     </p>
     <p v-if="frontmatter.place" class="mt--4!">
       <span op50>at </span>
