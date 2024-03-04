@@ -370,12 +370,12 @@ The interesting part, though, is that we can set it to `alternate`, which ping-p
 </button>
 </div>
 
-<br/>
-<br/>
-<br/>
+---
+
+---
 
 ```css
-.element-4 {
+.element {
     width: 100px;
     height: 100px;
     background-color:  #f6a192;
@@ -385,15 +385,6 @@ The interesting part, though, is that we can set it to `alternate`, which ping-p
      cool-animation
      3000ms
      ease-in-out
-}
-
-@keyframes cool-animation {
-    0% {
-        transform:  scale(0.5) translateY(-100px) rotate(20deg);
-    }
-    100% {
-        transform: scale(1.5) translateY(50px) rotate(-20deg);
-    }
 }
 ```
 
@@ -412,6 +403,20 @@ You notice that after the animation is done it resets the element back to it's o
 
 ---
 
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+     cool-animation
+     3000ms
+     ease-in-out
+     forwards
+}
+```
 
 ## You're Just Getting Started
 
