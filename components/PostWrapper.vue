@@ -77,7 +77,7 @@ onMounted(() => {
 <template>
   <div
     v-if="frontmatter.display ?? frontmatter.title"
-    class="prose my-auto mb-8 max-w-[var(--content-width) w-full md:px-0 px-7"
+    class="prose my-auto mb-8 max-w-[var(--content-width)] w-full md:px-0 px-7"
     :class="[frontmatter.wrapperClass]"
   >
     <h1 class="mb-0 slide-enter-50">

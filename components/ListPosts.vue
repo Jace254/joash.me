@@ -24,12 +24,13 @@ function getGroupName(p: Post) {
           <div
             v-if="!isSameGroup(blog as unknown as Post, list[idx - 1] as unknown as Post)"
             select-none relative h20 pointer-events-none slide-enter
+            max-w="content-fit"
             :style="{
               '--enter-stage': idx - 2,
               '--enter-step': '60ms',
             }"
           >
-            <span text-8em color-transparent absolute left--3rem top--2rem font-normal text-stroke-2 text-stroke-hex-aaa op10 overflow-hidden >{{ getGroupName(blog as unknown as Post) }}</span>
+            <span text-8em max-md:text-4.5em color-transparent absolute left--3rem max-md:left--2rem max-md:top-1rem top--2rem font-normal text-stroke-2 text-stroke-hex-818589 op15 >{{ getGroupName(blog as unknown as Post) }}</span>
           </div>
           <div
             class="slide-enter"
