@@ -125,7 +125,7 @@ But in this post I'll focus on only three things: _*_Scale_*_, _*_Rotation_*_ an
 
 ## Transition Animations
 
-These animations allow you to change propery values smoothly over a specified duration. To create a transition you must specify the property you want to add the effect to, and the duration.
+These animations allow you to change property values smoothly over a specified duration. To create a transition you must specify the property you want to add the effect to, and the duration.
 
 > Example
 
