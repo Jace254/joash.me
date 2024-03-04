@@ -158,7 +158,9 @@ Hover me
 
 ---
 
-This is just a simple example you can further create a more impactful animation with the use of a `transition-timing-function`. This affects how an animation plays out in terms of speed. There's various _timing functions_ that can be used: 
+### Transition Timing Functions
+
+You can further create a more impactful animation with the use of a `transition-timing-function`. This affects how an animation plays out in terms of speed. There's various _timing functions_ that can be used:
 
 - <span style="color:orange">ease</span> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
 - <span style="color:orange">linear</span> - specifies a transition effect with the same speed from start to end
@@ -186,6 +188,8 @@ Hover me
 ```
 
 You'll notice that the animation starts out slower than it ends.
+
+### Transition Delay
 
 And finally you can delay the transition using `transition-delay`. This just lags the animation from starting and gives an effect of anticipation.
 
@@ -307,7 +311,9 @@ Let's talk about the rest,
 }
 ```
 
-The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly,has the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-animations).
+### Animation Timing Function
+
+The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly,has the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-timing-functions).
 
 You can define it separately:
 ```css 
@@ -319,6 +325,8 @@ The next property is the `animation-iteration-count`. This is what determines ho
 ```css
 animation-iteration-count: infinite
 ```
+
+### Multi-Step Controlled Animation
 
 You probably noticed we are able to define the steps in the animation timeline using the percentage to completion. You can customize this further to have as many steps as possible to make your animation do all sorts of magic.
 
@@ -343,11 +351,15 @@ This gives you control on each and every motion the animated element makes. Hone
 
 Let's wrap this up with the last two values, `alternate` and `forwards`. 
 
+### Animation Direction
+
 `animation-direction` controls the order of the sequence. The default value is `normal`, going from 0% to 100% over the course of the specified duration.
 
 We can also set it to `reverse`. This will play the animation backwards, going from 100% to 0%.
 
 The interesting part, though, is that we can set it to `alternate`, which ping-pongs between normal and reverse on subsequent iterations.
+
+### Animation Fill Mode
 
 `animation-fill-mode` lets us persist the final value from the animation, forwards in time. Normally when you run an animation like this,
 
@@ -404,5 +416,7 @@ You notice that after the animation is done it resets the element back to it's o
 
 ---
 
+
+## You're Just Getting Started
 
 If you've made it this far, Congratulations. You can finally start doing awesome animations with CSS. This is just the beginning of your journey. Keep on improving those skills. Catch you next time.
