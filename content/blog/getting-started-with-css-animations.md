@@ -1,6 +1,6 @@
 ---
 title: Getting Started with CSS Animations
-date: 2024-03-03T16:33:11Z
+date: 2024-03-04T16:33:11Z
 description: A guide on understanding animations with pure css
 duration: In Progress
 draft: true
@@ -66,6 +66,7 @@ Hover me
     background-color: #1E5CC2;
     display: flex;
     color: black;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     transition: width 2s
@@ -99,6 +100,7 @@ Hover me
     background-color: #1E5CC2;
     display: flex;
     color: black;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     transition: width 2s;
@@ -138,6 +140,7 @@ Hover me
     color: black;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
     transition: width 2s;
     transition-timing-function: ease-in;
     transition-delay: 1s
@@ -191,5 +194,71 @@ So keyframes are defined with the `@keyframes` selector followed by the name of 
     100%: {
         /* apply final values for the properties */
     }
+
+    /* or */
+
+    from: {
+        /* apply properties to animate  */
+    }
+    to: {
+        /* apply final values for the properties */
+    }
 }
+```
+
+This time let's start with a complete animation sequence:
+
+<br/>
+<br/>
+<br/>
+
+<div class="element-4"></div>
+
+<style>
+.element-4 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation: cool-animation 3000ms ease-in-out infinite alternate forwards;
+}
+
+@keyframes cool-animation {
+    0% {
+        transform:  scale(0.5) translateY(-100px) rotate(20deg);
+    }
+    100% {
+        transform: scale(1.5) translateY(50px) rotate(-20deg);
+    }
+}
+</style>
+
+<br/>
+<br/>
+<br/>
+
+```html
+<div class="element">
+</div>
+
+<style>
+.element {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation: cool-animation 3000ms ease-in-out infinite alternate forwards;
+}
+
+@keyframes cool-animation {
+    0% {
+        transform:  scale(0.5) translateY(-100px) rotate(20deg);
+    }
+    100% {
+        transform: scale(1.5) translateY(50px) rotate(-20deg);
+    }
+}
+</style>
 ```

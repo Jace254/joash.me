@@ -11,6 +11,15 @@ const menuOpen = ref(false)
 const cartOpen = ref(false)
 const menu = ref()
 
+function toTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
+
+const { y: scroll } = useWindowScroll()
+
 watch(width, (w) => {
   if (w <= 600)
     isMobile.value = true
@@ -76,6 +85,16 @@ onBeforeUnmount(() => {
       </a>
     </nav>
   </header>
+  <button
+    title="Scroll to top"
+    fixed right-6 bottom-20 w-10 h-10 hover:op100 rounded-full
+    hover-bg-hex-8883 transition duration-300 z-100 print:hidden
+    flex items-center justify-center
+    :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
+    @click="toTop()"
+  >
+    <div i-ri-arrow-up-line />
+  </button>
   <div
     ref="menu"
     :class="cn('floating-nav max-md:top-4.5em top-1.5em', menuOpen || cartOpen ? 'floating-nav-open' : '', menuOpen ? ' menu-is-open menu-active' : '')"
