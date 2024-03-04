@@ -156,8 +156,6 @@ You'll get something that looks like this:
 Hover me
 </div>
 
----
-
 ### Transition Timing Functions
 
 You can further create a more impactful animation with the use of a `transition-timing-function`. This affects how an animation plays out in terms of speed. There's various _timing functions_ that can be used:
@@ -174,8 +172,6 @@ So let's update our previous animation to look like this:
 <div class="element-2">
 Hover me
 </div>
-
----
 
 ```css
 .element {
@@ -196,8 +192,6 @@ And finally you can delay the transition using `transition-delay`. This just lag
 <div class="element-3">
 Hover me
 </div>
-
----
 
 ```css
 .element {
@@ -253,9 +247,11 @@ So keyframes are defined with the `@keyframes` selector followed by the name of 
 }
 ```
 
+---
+
 This time let's start with a complete animation sequence:
 
----
+> Example
 
 <div class="element-4"></div>
 
