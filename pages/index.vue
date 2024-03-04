@@ -7,7 +7,7 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
 
 <template>
   <article
-    w-full h-full max-w="var(--content-width)"
+    w-full h-full
     class="slide-enter-content prose"
     md:px-0 px-7 relative block
   >

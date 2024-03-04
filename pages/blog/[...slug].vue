@@ -1,14 +1,6 @@
 <script setup lang="ts">
 const { page } = useContent()
 
-if (!page) {
-  throw createError({
-    statusCode: 404,
-    message: 'not found',
-    fatal: true,
-  })
-}
-
 onMounted(() => {
   const element = document.getElementById('element-5')
   const button = document.getElementById('replay')
@@ -61,4 +53,12 @@ onMounted(() => {
   <PostWrapper v-if="page" :frontmatter="page">
     <ContentDoc />
   </PostWrapper>
+  <div v-else class="prose w-full">
+    <h1>Apologies</h1>
+    <p>
+      You seem Lost, Let's get you back <NuxtLink to="/">
+        home
+      </NuxtLink>
+    </p>
+  </div>
 </template>
