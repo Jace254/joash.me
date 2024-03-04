@@ -29,7 +29,7 @@ function getGroupName(p: Post) {
               '--enter-step': '60ms',
             }"
           >
-            <span text-8em color-transparent absolute left--3rem top--2rem font-normal text-stroke-2 text-stroke-hex-aaa op10>{{ getGroupName(blog as unknown as Post) }}</span>
+            <span text-8em color-transparent absolute left--3rem top--2rem font-normal text-stroke-2 text-stroke-hex-aaa op10 overflow-hidden >{{ getGroupName(blog as unknown as Post) }}</span>
           </div>
           <div
             class="slide-enter"

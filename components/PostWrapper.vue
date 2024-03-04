@@ -75,9 +75,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <ClientOnly v-if="frontmatter.plum">
-    <Plum />
-  </ClientOnly>
   <div
     v-if="frontmatter.display ?? frontmatter.title"
     class="prose my-auto mb-8 max-w-[var(--content-width) w-full md:px-0 px-7"

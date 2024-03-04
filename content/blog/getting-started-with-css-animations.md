@@ -221,7 +221,13 @@ This time let's start with a complete animation sequence:
     background-color:  #f6a192;
     border-radius: 20px;
     padding: 20px;
-    animation: cool-animation 3000ms ease-in-out infinite alternate forwards;
+    animation:
+     cool-animation
+     3000ms
+     ease-in-out
+     infinite
+     alternate
+     forwards;
 }
 
 @keyframes cool-animation {
@@ -249,7 +255,13 @@ This time let's start with a complete animation sequence:
     background-color:  #f6a192;
     border-radius: 20px;
     padding: 20px;
-    animation: cool-animation 3000ms ease-in-out infinite alternate forwards;
+    animation: 
+        cool-animation 
+        3000ms 
+        ease-in-out 
+        infinite 
+        alternate 
+        forwards;
 }
 
 @keyframes cool-animation {
@@ -262,3 +274,27 @@ This time let's start with a complete animation sequence:
 }
 </style>
 ```
+
+The first two values in the animation property specify the animation that is running and the duration of the animation.
+
+Let's talk about the rest,
+
+```css line=10
+.element {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation: 
+        cool-animation 
+        3000ms 
+        ease-in-out 
+        infinite 
+        alternate 
+        forwards;
+}
+```
+
+The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly, the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-animations).
+
