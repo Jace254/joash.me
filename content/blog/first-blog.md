@@ -1,7 +1,7 @@
 ---
 title: My first blog
 date: 2024-03-02T23:00:00Z
-duration: 23secs
+duration: 23 sec
 description: My first blog ever
 ---
 
