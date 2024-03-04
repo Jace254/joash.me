@@ -313,7 +313,7 @@ Let's talk about the rest,
 
 ### Animation Timing Function
 
-The ease-in-out, just like in transition animations, is the `animation-timing-function`. It controls the speed of the progressing animation and similarly,has the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-timing-functions).
+The `ease-in-out`, is the `animation-timing-function`.Just like in transition animations, it controls the speed of the progressing animation and has the different functions mentioned in the [transitions section](/blog/getting-started-with-css-animations#transition-timing-functions).
 
 You can define it separately:
 ```css 
@@ -349,7 +349,7 @@ You probably noticed we are able to define the steps in the animation timeline u
 
 This gives you control on each and every motion the animated element makes. Honestly you could become an animator at this point, right ?
 
-Let's wrap this up with the last two values, `alternate` and `forwards`. 
+Let's wrap this up with the last two values, `alternate` and `forwards`.
 
 ### Animation Direction
 
