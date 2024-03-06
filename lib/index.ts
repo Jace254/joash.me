@@ -12,6 +12,18 @@ export const projects: Project[] = [
     link: 'https://100.joash.me',
   },
   {
+    name: 'Hotspot UI',
+    description: 'Wezeshanet WISP Hostpot user portal',
+    year: '2024',
+    link: 'hotspot-preview.vercel.app',
+  },
+  {
+    name: 'vitesse-nuxt3-shadcn',
+    description: 'vitesse-nuxt3 template with shadcn',
+    year: '2024',
+    link: 'vitesse-nuxt3-shadcn.vercel.app',
+  },
+  {
     name: 'Beeetle Chatbot',
     description: 'A chatbot assitant for myself',
     year: '2024',
@@ -28,5 +40,11 @@ export const projects: Project[] = [
     description: 'A text editor',
     year: '2023',
     link: 'https://sur.joash.me',
+  },
+  {
+    name: 'ISP Landing Page',
+    description: 'Wezeshanet WISP landing page',
+    year: '2023',
+    link: 'cloud-wezeshanet.vercel.app',
   },
 ]
