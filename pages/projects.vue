@@ -2,7 +2,7 @@
 import crypticTyping from 'cryptic-typing'
 import { projects } from '@/lib'
 
-const newProjects = ref(projects.map((_p) => { return { name: ' ', description: ' ', year: ' ' } }))
+const newProjects = ref(projects.map((p) => { return { name: ' ', description: ' ', year: ' ', link: p.link } }))
 
 onBeforeMount(() => {
   projects.forEach((p, i) => {
