@@ -30,7 +30,12 @@ function getGroupName(p: Post) {
               '--enter-step': '60ms',
             }"
           >
-            <span text-8em max-md:text-4.5em color-transparent absolute left--3rem max-md:left--2rem max-md:top-1rem top--2rem font-normal text-stroke-2 text-stroke-hex-818589 op15 >{{ getGroupName(blog as unknown as Post) }}</span>
+            <span
+              text-8em max-md:text-4.5em color-transparent
+              absolute left--3rem max-md:left--2rem max-md:top-1rem
+              top--2rem font-bold text-stroke-2 text-stroke-hex-818589 op15
+              style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, Segoe UI Symbol, &quot;Noto Color Emoji&quot;"
+            >{{ getGroupName(blog as unknown as Post) }}</span>
           </div>
           <div
             class="slide-enter"
