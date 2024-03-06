@@ -35,6 +35,9 @@ dependencies:
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
+  cryptic-typing:
+    specifier: ^1.0.14
+    version: 1.0.14
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -4532,6 +4535,10 @@ packages:
       uWebSockets.js:
         optional: true
     dev: true
+
+  /cryptic-typing@1.0.14:
+    resolution: {integrity: sha512-3w+fcrcQaV5dl5dJbZl8g7xvlpU02s2uXwBoqREB1RuXn802kkX6GOe8MzmktVvRZb0OrXYbiJ/MqdHIpdDtVw==}
+    dev: false
 
   /css-background-parser@0.1.0:
     resolution: {integrity: sha512-2EZLisiZQ+7m4wwur/qiYJRniHX4K5Tc9w93MT3AS0WS1u5kaZ4FKXlOTBhOjc+CgEgPiGY+fX1yWD8UwpEqUA==}
