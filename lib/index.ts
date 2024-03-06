@@ -6,6 +6,12 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
+    name: 'Beeetle Chatbot',
+    description: 'A chatbot assitant for myself',
+    year: '2024',
+    link: 'https://chatbot.joash.me',
+  },
+  {
     name: '100',
     description: '100 day challenge on design and development',
     year: '2024',
@@ -22,12 +28,6 @@ export const projects: Project[] = [
     description: 'vitesse-nuxt3 template with shadcn',
     year: '2024',
     link: 'https://vitesse-nuxt3-shadcn.vercel.app',
-  },
-  {
-    name: 'Beeetle Chatbot',
-    description: 'A chatbot assitant for myself',
-    year: '2024',
-    link: 'https://chatbot.joash.me',
   },
   {
     name: 'CodeGround',
