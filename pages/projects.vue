@@ -2,7 +2,7 @@
 import crypticTyping from 'cryptic-typing'
 import { projects } from '@/lib'
 
-const newProjects = ref(projects.map((p) => { return { name: ' ', description: ' ', year: ' ', link: p.link } }))
+const newProjects = ref(projects.map((p) => { return { name: '', description: '', year: '', link: p.link } }))
 
 onBeforeMount(() => {
   projects.forEach((p, i) => {
@@ -19,17 +19,23 @@ onBeforeMount(() => {
 })
 
 definePageMeta({
-  layout: undefined,
+  layout: 'lists',
 })
 </script>
 
 <template>
   <main class="wrapper sizing w-full ">
-    <div v-for="project, idx in newProjects" :key="idx" class="link-wrapper">
+    <div
+      v-for="project, idx in newProjects"
+      :key="idx" class="link-wrapper slide-enter"
+      :style="{
+        '--enter-stage': idx,
+        '--enter-step': '100ms',
+      }"
+    >
       <NuxtLink class="link" :href="project.link" target="_blank" rel="noopener">
         <span
           class="project-title"
-          style="--i: 0; --c1: 'x'; --c2: '$'; --c3: '≈'"
         >{{ project.name }}</span>
         <span class="project-desc">{{ project.description }}</span>
         <div class="animated-line" :style="`--d: ${idx}`" />
