@@ -137,7 +137,7 @@ definePageMeta({
   height: 1px;
   width: 0px;
   z-index: 3;
-  animation: 1s ease calc(var(--d) * 0.02s) 1 normal forwards running shine;
+  animation: 1s ease calc(var(--d) * 0.1s) 1 normal forwards running shine;
 }
 
 .animated-line::after {
@@ -146,7 +146,7 @@ definePageMeta({
   bottom: -1px;
   height: 1px;
   width: 0px;
-  animation: 1s ease calc(var(--d) * 0.02s) 1 normal forwards running settle;
+  animation: 1s ease calc(var(--d) * 0.1s) 1 normal forwards running settle;
 }
 
 .project-date {
