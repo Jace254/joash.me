@@ -21,7 +21,7 @@ export const projects: Project[] = [
     name: 'vitesse-nuxt3-shadcn',
     description: 'vitesse-nuxt3 template with shadcn',
     year: '2024',
-    link: 'vitesse-nuxt3-shadcn.vercel.app',
+    link: 'https://vitesse-nuxt3-shadcn.vercel.app',
   },
   {
     name: 'Beeetle Chatbot',
