@@ -15,7 +15,7 @@ export const projects: Project[] = [
     name: 'Hotspot UI',
     description: 'Wezeshanet WISP Hostpot user portal',
     year: '2024',
-    link: 'hotspot-preview.vercel.app',
+    link: 'https://hotspot-preview.vercel.app',
   },
   {
     name: 'vitesse-nuxt3-shadcn',
@@ -45,6 +45,6 @@ export const projects: Project[] = [
     name: 'ISP Landing Page',
     description: 'Wezeshanet WISP landing page',
     year: '2023',
-    link: 'cloud-wezeshanet.vercel.app',
+    link: 'https://cloud-wezeshanet.vercel.app',
   },
 ]
