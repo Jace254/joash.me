@@ -45,6 +45,6 @@ export const projects: Project[] = [
     name: 'ISP Landing Page',
     description: 'Wezeshanet WISP landing page',
     year: '2023',
-    link: 'https://cloud-wezeshanet.vercel.app',
+    link: 'https://isp.wezeshanet.com/',
   },
 ]

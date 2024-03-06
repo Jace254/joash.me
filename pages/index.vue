@@ -30,6 +30,11 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
           {{ project.description }}
         </p>
       </div>
+      <div>
+        <NuxtLink class="block text-[14px] mb-6 mt--2 " to="/projects" style="cursor: pointer; border-bottom: 1px dashed; --at-apply: 'text-foreground:40 hover:text-foreground'">
+          More Projects
+        </NuxtLink>
+      </div>
     </div>
     <div flex flex-col gap-2 items-start class="slide-enter-content">
       <h4 text-black dark:text-white>
@@ -45,7 +50,7 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
           </NuxtLink>
         </div>
         <div v-if="list.length === 5">
-          <NuxtLink class="item block font-normal mb-6 mt-2 " style="cursor: pointer; text-decoration:dashed;">
+          <NuxtLink class="block mb-6 mt--2 border-foreground" to="/blog" style="cursor: pointer; border-bottom: 1px dashed;">
             More
           </NuxtLink>
         </div>
