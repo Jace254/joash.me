@@ -26,7 +26,7 @@ definePageMeta({
 <template>
   <main class="wrapper sizing w-full ">
     <div v-for="project, idx in newProjects" :key="idx" class="link-wrapper">
-      <NuxtLink class="link" :href="project.link">
+      <NuxtLink class="link" :href="project.link" target="_blank" rel="noopener">
         <span
           class="project-title"
           style="--i: 0; --c1: 'x'; --c2: '$'; --c3: '≈'"
