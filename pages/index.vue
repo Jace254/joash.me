@@ -24,7 +24,7 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
       <h4 text-black dark:text-white>
         Projects
       </h4>
-      <div v-for="project, idx of projects" :key="idx" grid gap-y-1>
+      <div v-for="project, idx of projects.slice(0, 5)" :key="idx" grid gap-y-1>
         <a :href="project.link" target="_blank" rel="noopener" flex items-center>{{ project.name }} <span i-ic-sharp-arrow-outward text-gray /></a>
         <p text=".9rem">
           {{ project.description }}
