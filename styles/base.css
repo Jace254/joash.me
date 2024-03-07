@@ -24,6 +24,9 @@
     --c-bg: #fff;
     --c-scrollbar: #eee;
     --c-scrollbar-hover: #bbb;
+    --fg: #555;
+    --fg-deep: #222;
+    --fg-deeper: #000;
     --page-width: 1072px;
     --page-left: auto;
     --page-top: 128px;
@@ -51,6 +54,9 @@ html.dark {
     --c-bg: #050505;
     --c-scrollbar: #111;
     --c-scrollbar-hover: #222;
+    --fg: #bbb;
+    --fg-deep: #ddd;
+    --fg-deeper: #fff;
 }
 
 ::selection {

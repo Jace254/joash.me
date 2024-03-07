@@ -97,7 +97,7 @@ definePageMeta({
 }
 
 .link:hover {
-  background-color: hsl(0 0% 13.6%);
+  background-color: hsl(var(--accent)/ 50%);
 }
 
 .link::selection {
@@ -107,7 +107,7 @@ definePageMeta({
 
 .project-title {
   display: inline-block;
-  color: hsl(0 0% 93%);
+  color:var(--fg-deeper);
   font-weight: 500;
   line-height: 28px;
   font-size: 14px;
@@ -118,7 +118,7 @@ definePageMeta({
   margin: 0;
   margin-left: -8px;
   display: inline-block;
-  color: hsl(0 0% 62.8%);
+  color:var(--fg);
   font-weight: 400;
   line-height: 28px;
   font-size: 14px;
@@ -156,7 +156,7 @@ definePageMeta({
 }
 
 .project-date {
-  color: hsl(0 0% 43.9%);
+  color:  hsl(var(--foreground));
   font-weight: 400;
   display: block;
   margin: 0;
@@ -173,7 +173,7 @@ definePageMeta({
   }
 
   50% {
-    background: hsl(0 0% 49.4%);
+    background: hsl(var(--foreground));
   }
   100% {
     width: 100%;
@@ -187,11 +187,11 @@ definePageMeta({
   }
 
   50% {
-    background: hsl(0 0% 49.4%);
+    background: hsl(var(--foreground));
   }
   100% {
     width: 100%;
-    background: hsl(0 0% 17.9%);
+    background: hsl(var(--foreground)/ 30%);
   }
 }
-</style>import { onBeforeMount } from 'vue';
+</style>
