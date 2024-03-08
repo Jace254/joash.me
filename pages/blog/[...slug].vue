@@ -48,8 +48,8 @@ onMounted(() => {
     </p>
   </div>
 
-  <div class="table-of-contents">
-    <div class="table-of-contents-anchor"><div class="i-ri-align-left" /></div>
+  <div class="table-of-contents" v-if="navigation.length > 0">
+    <div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>
     <ul>
       <TOCLink :navigation="navigation"/>
     </ul>

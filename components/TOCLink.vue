@@ -9,9 +9,9 @@ defineProps<{ navigation: Nav[] }>()
 
 <template>
   <li v-for="link, idx of navigation" :key="idx">
-    <NuxtLink :to="`#${link.id}`">
+    <a :href="`#${link.id}`">
       {{ link.text }}
-    </NuxtLink>
+    </a>
     <ul v-if="link.children">
       <TOCLink :navigation="link.children" />
     </ul>
