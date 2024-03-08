@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { page } = useContent()
+const { page, toc } = useContent()
+const navigation = toc.value.links
 
 onMounted(() => {
   const element = document.getElementById('element-5')
@@ -37,6 +38,7 @@ onMounted(() => {
   <PostWrapper v-if="page" :frontmatter="page">
     <ContentDoc />
   </PostWrapper>
+
   <div v-else class="prose w-full">
     <h1>Apologies</h1>
     <p>
@@ -44,5 +46,12 @@ onMounted(() => {
         home
       </NuxtLink>
     </p>
+  </div>
+
+  <div class="table-of-contents">
+    <div class="table-of-contents-anchor"><div class="i-ri-align-left" /></div>
+    <ul>
+      <TOCLink :navigation="navigation"/>
+    </ul>
   </div>
 </template>

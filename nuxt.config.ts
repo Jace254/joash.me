@@ -17,6 +17,10 @@ export default defineNuxtConfig({
       remarkPlugins: [
         'remark-external-links',
       ],
+      toc: {
+        depth: 5,
+        searchDepth: 5,
+      },
     },
   },
   app: {

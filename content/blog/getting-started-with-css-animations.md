@@ -5,104 +5,6 @@ description: A guide on understanding animations with pure css
 duration: 5 min
 ---
 
-<style>
-.element {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: width 2s
-}
-.element:hover {
-   width: 200px
-}
-
-.element-2 {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: width 2s;
-    transition-timing-function: ease-in;
-}
-.element-2:hover {
-    width: 200px
-}
-.element-3 {
-    width: 100px;
-    height: 100px;
-    background-color: #1E5CC2;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    transition: width 2s;
-    transition-timing-function: ease-in;
-    transition-delay: 1s
-}
-.element-3:hover {
-    width: 200px
-}
-
-.element-4 {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
-    animation:
-     cool-animation
-     3000ms
-     ease-in-out
-     infinite
-     alternate
-     forwards;
-}
-
-.element-5 {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
-    animation:
-        cool-animation
-        3000ms
-        ease-in-out
-}
-
-.element-6 {
-    width: 100px;
-    height: 100px;
-    background-color:  #f6a192;
-    border-radius: 20px;
-    padding: 20px;
-    animation:
-        cool-animation
-        3000ms
-        ease-in-out
-        forwards
-}
-
-@keyframes cool-animation {
-    0% {
-        transform:  scale(0.5) translateY(-100px) rotate(20deg);
-    }
-    100% {
-        transform: scale(1.5) translateY(50px) rotate(-20deg);
-    }
-}
-</style>
-
 I've been experimenting with CSS animations in the past 3 months. I realized that there's so much that can be done with just pure CSS, without the need for 3rd party libraries. Before I'd just go online and find a library that handles animations, but you will find that lots of them are not framework agnostic. So I decided to do some research and the answer was really in front of me the whole time. CSS !
 
 ## Why CSS
@@ -413,3 +315,101 @@ You notice that after the animation is done it resets the element back to it's o
 ## You're Just Getting Started
 
 If you've made it this far, Congratulations. You can finally start doing awesome animations with CSS. This is just the beginning of your journey. Keep on improving those skills. Catch you next time.
+
+<style>
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s
+}
+.element:hover {
+   width: 200px
+}
+
+.element-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+.element-2:hover {
+    width: 200px
+}
+.element-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #1E5CC2;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+.element-3:hover {
+    width: 200px
+}
+
+.element-4 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+     cool-animation
+     3000ms
+     ease-in-out
+     infinite
+     alternate
+     forwards;
+}
+
+.element-5 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+        cool-animation
+        3000ms
+        ease-in-out
+}
+
+.element-6 {
+    width: 100px;
+    height: 100px;
+    background-color:  #f6a192;
+    border-radius: 20px;
+    padding: 20px;
+    animation:
+        cool-animation
+        3000ms
+        ease-in-out
+        forwards
+}
+
+@keyframes cool-animation {
+    0% {
+        transform:  scale(0.5) translateY(-100px) rotate(20deg);
+    }
+    100% {
+        transform: scale(1.5) translateY(50px) rotate(-20deg);
+    }
+}
+</style>

@@ -44,6 +44,7 @@
     "nuxt": "^3.8.2",
     "remark-external-links": "^9.0.1",
     "tailwind-merge": "^2.1.0",
+    "unplugin-vue-markdown": "^0.26.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   }

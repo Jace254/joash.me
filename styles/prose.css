@@ -45,7 +45,7 @@ html:not(.dark) .shiki span {
 
 .prose p > img {
   width: 100%;
-  --uno: shadow rounded-lg;
+ --at-apply: shadow rounded-lg;
   transform: scale(1.05);
   margin: 2.6em 0;
 }
@@ -155,25 +155,23 @@ h6:focus .header-anchor {
   left: 20px;
   z-index: 200;
   overflow: hidden;
-  --uno: hidden lg-flex flex-col w-100px lg-w-200px xl-w-300px;
+ --at-apply: hidden lg-flex flex-col w-100px lg-w-200px xl-w-300px;
 }
 
 .table-of-contents-anchor {
-  --uno: mx2 w-7 h-7 text-lg flex items-center justify-center bg-base rounded
-    text-hex-8887 border border-base shadow md: border-transparent md:
-    shadow-none transition duration-400;
+ --at-apply: mx2 w-7 h-7 text-lg flex items-center justify-center bg-base rounded text-hex-8887 border border-none shadow md:border-transparent md:shadow-none transition duration-400;
 }
 
 .table-of-contents > ul {
   text-overflow: ellipsis;
   height: 100%;
   overflow-y: auto;
-  --uno: rounded op0 mt-1 pb-5 transition duration-700;
+ --at-apply: rounded op0 mt-1 pb-5 transition duration-700;
 }
 
 *:hover > .table-of-contents > .table-of-contents-anchor,
 .toc-always-on .table-of-contents > .table-of-contents-anchor {
-  --uno: text-inherit;
+ --at-apply: text-inherit;
 }
 
 .toc-always-on .table-of-contents > ul {
@@ -195,7 +193,7 @@ h6:focus .header-anchor {
 }
 
 .table-of-contents ul > li > a {
-  --uno: op75 hover-op100 transition;
+ --at-apply: op75 hover-op100 transition;
 }
 
 .code-wrap .line {
@@ -707,7 +705,7 @@ h6:focus .header-anchor {
 
 .prose :where(pre) {
   font-family: 'Courier New', monospace;
-  --uno: border border-base dark:bg-black bg-gray:20;
+ --at-apply: border border-base dark:bg-black bg-gray:20;
   overflow-x: auto;
   padding: 10px;
 }
