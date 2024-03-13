@@ -43,11 +43,11 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
       <ContentList v-slot="{ list }" :query="query">
         <div v-for="blog in list" :key="blog._path">
           <NuxtLink :to="blog._path">
-            <span align-middle>{{ blog.title }}</span>
-            <p font-thin text-gray:70 text-sm mt-2>
+            {{ blog.title }}
+          </NuxtLink>
+            <p text=".9rem">
               {{ blog.description }}
             </p>
-          </NuxtLink>
         </div>
         <div v-if="list.length === 5">
           <NuxtLink class="block mb-6 mt--2 border-foreground" to="/blog" style="cursor: pointer; border-bottom: 1px dashed;">

@@ -1,5 +1,5 @@
 <template>
   <div>
-    Store
+    Product
   </div>
 </template>

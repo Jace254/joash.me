@@ -1,7 +1,12 @@
 <template>
   <NuxtLayout>
     <article class="prose">
-      <h2>You Are Lost</h2>
+      <h1>Apologies</h1>
+      <p>
+        You seem Lost, Let's get you back <NuxtLink to="/">
+          home
+        </NuxtLink>
+      </p>
     </article>
   </NuxtLayout>
 </template>
