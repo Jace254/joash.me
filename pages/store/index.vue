@@ -22,7 +22,7 @@ const products = [
 </script>
 
 <template>
-  <div class="w-full lg:px-[300px] md:px-5 px-3 py-4 ">
+  <div class="w-full max-w-[1143.25px] px my4">
     <p
       class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2 w-full
     >
