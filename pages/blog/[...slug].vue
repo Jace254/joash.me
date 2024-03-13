@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const { page, toc } = useContent()
 const navigation = toc.value.links
 
@@ -39,19 +40,10 @@ onMounted(() => {
     <ContentDoc />
   </PostWrapper>
 
-  <div v-else class="prose w-full">
-    <h1>Apologies</h1>
-    <p>
-      You seem Lost, Let's get you back <NuxtLink to="/">
-        home
-      </NuxtLink>
-    </p>
-  </div>
-
   <div class="table-of-contents" v-if="navigation.length > 0">
     <div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>
     <ul>
-      <TOCLink :navigation="navigation"/>
+      <TOCLinks :navigation="navigation"/>
     </ul>
   </div>
 </template>

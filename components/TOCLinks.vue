@@ -13,7 +13,7 @@ defineProps<{ navigation: Nav[] }>()
       {{ link.text }}
     </a>
     <ul v-if="link.children">
-      <TOCLink :navigation="link.children" />
+      <TOCLinks :navigation="link.children" />
     </ul>
   </li>
 </template>
