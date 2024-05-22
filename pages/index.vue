@@ -24,8 +24,11 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
       <h4 text-black dark:text-white>
         Projects
       </h4>
-      <div v-for="project, idx of projects.slice(0, 5)" :key="idx" grid gap-y-1>
-        <a :href="project.link" target="_blank" rel="noopener" flex items-center>{{ project.name }} <span i-ic-sharp-arrow-outward text-gray /></a>
+      <div v-for="project, idx of projects.slice(0, 5)" :key="idx">
+        <NuxtLink :to="project.link" target="_blank" rel="noopener" class="after:i-ic-sharp-arrow-outward after:text-gray after:content-[''] after:text-md after:inline-block">
+          {{ project.name }}
+          <span   />
+        </NuxtLink>
         <p text=".9rem">
           {{ project.description }}
         </p>
@@ -45,9 +48,9 @@ const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }
           <NuxtLink :to="blog._path">
             {{ blog.title }}
           </NuxtLink>
-            <p text=".9rem">
-              {{ blog.description }}
-            </p>
+          <p text=".9rem">
+            {{ blog.description }}
+          </p>
         </div>
         <div v-if="list.length === 5">
           <NuxtLink class="block mb-6 mt--2 border-foreground" to="/blog" style="cursor: pointer; border-bottom: 1px dashed;">

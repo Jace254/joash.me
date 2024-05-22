@@ -4,12 +4,10 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
   transformerDirectives,
 } from 'unocss'
 import extractorMdc from '@unocss/extractor-mdc'
 import presetShadcn from './preset.shadcn'
-
 
 export default defineConfig({
   shortcuts: {
@@ -24,8 +22,9 @@ export default defineConfig({
   },
   theme: {
     fontFamily: {
-      sans: 'GeneralSans-Variable',
-      mono: 'rmono'
+      dm: 'WallauUnzialBold',
+      sans: 'Jetbrains Mono',
+      mono: 'rmono',
     },
   },
   presets: [
