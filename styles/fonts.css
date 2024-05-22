@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/GeneralSans-Variable.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'rmono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/WallauUnzialBold.woff2') format('woff');
+}

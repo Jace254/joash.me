@@ -10,6 +10,7 @@ import {
 import extractorMdc from '@unocss/extractor-mdc'
 import presetShadcn from './preset.shadcn'
 
+
 export default defineConfig({
   shortcuts: {
     'border-base': 'border-gray-200 dark:border-gray-800',
@@ -21,17 +22,16 @@ export default defineConfig({
     'animate-accordion-up': 'accordion-up',
     'animate-accordion-down': 'accordion-down',
   },
+  theme: {
+    fontFamily: {
+      sans: 'GeneralSans-Variable',
+      mono: 'rmono'
+    },
+  },
   presets: [
     presetUno(),
     presetIcons(),
     presetAttributify(),
-    presetWebFonts({
-      provider: 'bunny',
-      fonts: {
-        sans: 'DM Sans',
-        mono: 'Quicksand',
-      },
-    }),
     presetTypography(),
     presetShadcn(),
   ],

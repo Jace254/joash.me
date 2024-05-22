@@ -10,4 +10,5 @@
 @import './styles/main.css';
 @import './styles/base.css';
 @import './styles/prose.css';
+@import './styles/fonts.css';
 </style>
