@@ -6,6 +6,12 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
+    name: 'Sandblx',
+    description: 'Node Graph Visual Editor(Developing)',
+    year: '2024',
+    link: 'https://sandblx.joash.me',
+  },
+  {
     name: 'Beeetle Chatbot',
     description: 'A chatbot assitant for myself',
     year: '2024',
@@ -21,7 +27,7 @@ export const projects: Project[] = [
     name: 'Hotspot UI',
     description: 'Wezeshanet WISP Hostpot user portal',
     year: '2024',
-    link: 'https://hotspot-preview.vercel.app',
+    link: 'https://hotspot.joash.me',
   },
   {
     name: 'vitesse-nuxt3-shadcn',
