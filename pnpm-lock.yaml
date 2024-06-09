@@ -27,8 +27,8 @@ dependencies:
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)(svelte@4.2.10)(vue-router@4.2.5)(vue@3.3.9)
   beeetle-chatbot-js:
-    specifier: 1.0.16
-    version: 1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
+    specifier: 1.0.24
+    version: 1.0.24(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -1210,7 +1210,7 @@ packages:
     dependencies:
       '@floating-ui/dom': 1.6.1
       '@floating-ui/utils': 0.2.1
-      vue-demi: 0.14.6(vue@3.4.16)
+      vue-demi: 0.14.7(vue@3.4.16)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -3534,18 +3534,6 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/core@10.7.2(vue@3.4.16):
-    resolution: {integrity: sha512-AOyAL2rK0By62Hm+iqQn6Rbu8bfmbgaIMXcE3TSr7BdQ42wnSFlwIdPjInO62onYsEMK/yDMU8C6oGfDAtZ2qQ==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 10.7.2
-      '@vueuse/shared': 10.7.2(vue@3.4.16)
-      vue-demi: 0.14.6(vue@3.4.16)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
   /@vueuse/core@10.9.0(vue@3.3.9):
     resolution: {integrity: sha512-/1vjTol8SXnx6xewDEKfS0Ra//ncg4Hb0DaZiwKf7drgfMsKFExQ+FnnENcN6efPen+1kIzhLQoGSy0eDUVOMg==}
     dependencies:
@@ -3557,6 +3545,18 @@ packages:
       - '@vue/composition-api'
       - vue
     dev: true
+
+  /@vueuse/core@10.9.0(vue@3.4.16):
+    resolution: {integrity: sha512-/1vjTol8SXnx6xewDEKfS0Ra//ncg4Hb0DaZiwKf7drgfMsKFExQ+FnnENcN6efPen+1kIzhLQoGSy0eDUVOMg==}
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 10.9.0
+      '@vueuse/shared': 10.9.0(vue@3.4.16)
+      vue-demi: 0.14.7(vue@3.4.16)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@vueuse/head@2.0.0(vue@3.3.9):
     resolution: {integrity: sha512-ykdOxTGs95xjD4WXE4na/umxZea2Itl0GWBILas+O4oqS7eXIods38INvk3XkJKjqMdWPcpCyLX/DioLQxU1KA==}
@@ -3574,13 +3574,8 @@ packages:
     resolution: {integrity: sha512-qhdwPI65Bgcj23e5lpGfQsxcy0bMjCAsUGoXkJ7DsoeDUdasbZ2DBa4dinFCOER3lF4gwUv+UD2AlA11zdzMFw==}
     dev: true
 
-  /@vueuse/metadata@10.7.2:
-    resolution: {integrity: sha512-kCWPb4J2KGrwLtn1eJwaJD742u1k5h6v/St5wFe8Quih90+k2a0JP8BS4Zp34XUuJqS2AxFYMb1wjUL8HfhWsQ==}
-    dev: false
-
   /@vueuse/metadata@10.9.0:
     resolution: {integrity: sha512-iddNbg3yZM0X7qFY2sAotomgdHK7YJ6sKUvQqbvwnf7TmaVPxS4EJydcNsVejNdS8iWCtDk+fYXr7E32nyTnGA==}
-    dev: true
 
   /@vueuse/nuxt@10.6.1(nuxt@3.8.2)(vue@3.3.9):
     resolution: {integrity: sha512-MnXg0ZviWHKcf2CsBYeHXhK9Pqn2TF7EJfaLgd+3rHEyb6XlSLUKBTPNCiO+5VH3Ck1IJAez90KS3VAdSqqs1w==}
@@ -3627,15 +3622,6 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/shared@10.7.2(vue@3.4.16):
-    resolution: {integrity: sha512-qFbXoxS44pi2FkgFjPvF4h7c9oMDutpyBdcJdMYIMg9XyXli2meFMuaKn+UMgsClo//Th6+beeCgqweT/79BVA==}
-    dependencies:
-      vue-demi: 0.14.6(vue@3.4.16)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
   /@vueuse/shared@10.9.0(vue@3.3.9):
     resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
     dependencies:
@@ -3644,6 +3630,15 @@ packages:
       - '@vue/composition-api'
       - vue
     dev: true
+
+  /@vueuse/shared@10.9.0(vue@3.4.16):
+    resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
+    dependencies:
+      vue-demi: 0.14.7(vue@3.4.16)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
@@ -4062,11 +4057,11 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /beeetle-chatbot-js@1.0.16(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
-    resolution: {integrity: sha512-bWcjYHuXAW81IlFDohj189EuapxikEgxvXlVpw7fvi+wCRjCskctsfPWP8C0UrSPS41OK7NcfEHM64za+iAzxw==}
+  /beeetle-chatbot-js@1.0.24(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
+    resolution: {integrity: sha512-A8vIgSXe0wd2aQarRrLrcnpRkUqyqkFsOgdtF31s/bp2w5tB4JPkZsg/TW3GfaFuUF490KkHRo7M6AiZhQLWpQ==}
     dependencies:
       '@unocss/reset': 0.58.5
-      '@vueuse/core': 10.7.2(vue@3.4.16)
+      '@vueuse/core': 10.9.0(vue@3.4.16)
       ai: 2.2.33(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(vue@3.4.16)
       highlight.js: 11.9.0
       lucide-vue-next: 0.303.0(vue@3.4.16)
@@ -11010,21 +11005,6 @@ packages:
     dependencies:
       vue: 3.3.9(typescript@5.3.2)
 
-  /vue-demi@0.14.6(vue@3.4.16):
-    resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      vue: 3.4.16(typescript@5.3.2)
-    dev: false
-
   /vue-demi@0.14.7(vue@3.3.9):
     resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
     engines: {node: '>=12'}
@@ -11039,6 +11019,21 @@ packages:
     dependencies:
       vue: 3.3.9(typescript@5.3.2)
     dev: true
+
+  /vue-demi@0.14.7(vue@3.4.16):
+    resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.4.16(typescript@5.3.2)
+    dev: false
 
   /vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
