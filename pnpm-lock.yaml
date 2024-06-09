@@ -27,8 +27,8 @@ dependencies:
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)(svelte@4.2.10)(vue-router@4.2.5)(vue@3.3.9)
   beeetle-chatbot-js:
-    specifier: 1.0.24
-    version: 1.0.24(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
+    specifier: 1.0.27
+    version: 1.0.27(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -504,7 +504,6 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.24.0
-    dev: true
 
   /@babel/plugin-proposal-decorators@7.23.5(@babel/core@7.23.5):
     resolution: {integrity: sha512-6IsY8jOeWibsengGlWIezp7cuZEFzNlAghFpzh9wiZwhQ42/hRcPnY/QV9HJoKTlujupinSlnQPiEy/u2C1ZfQ==}
@@ -694,7 +693,6 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
-    dev: true
 
   /@cloudflare/kv-asset-handler@0.3.0:
     resolution: {integrity: sha512-9CB/MKf/wdvbfkUdfrj+OkEwZ5b7rws0eogJ4293h+7b6KX5toPwym+VQKmILafNB9YiehqY0DlNrDcDhdWHSQ==}
@@ -3424,7 +3422,7 @@ packages:
   /@vue/compiler-sfc@3.4.16:
     resolution: {integrity: sha512-zVYC42Q/NmbB4nigGcQeIvsLpBlq6K9wJP5jTFCqfpXWnkodxfLFQHDu2GntZ7yKOgwAjxuvLwrPx+I6LPL2vg==}
     dependencies:
-      '@babel/parser': 7.23.9
+      '@babel/parser': 7.24.0
       '@vue/compiler-core': 3.4.16
       '@vue/compiler-dom': 3.4.16
       '@vue/compiler-ssr': 3.4.16
@@ -4057,8 +4055,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /beeetle-chatbot-js@1.0.24(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
-    resolution: {integrity: sha512-A8vIgSXe0wd2aQarRrLrcnpRkUqyqkFsOgdtF31s/bp2w5tB4JPkZsg/TW3GfaFuUF490KkHRo7M6AiZhQLWpQ==}
+  /beeetle-chatbot-js@1.0.27(react@18.2.0)(solid-js@1.8.14)(svelte@4.2.10)(typescript@5.3.2):
+    resolution: {integrity: sha512-hcEyWm20KYPbMpcxIEUsaOD4b/YqZe73+0dQ6QXRDFIKdkLLwZRm0kPqy6io58d0w8CxtFpD1TXAqODqdOgk/A==}
     dependencies:
       '@unocss/reset': 0.58.5
       '@vueuse/core': 10.9.0(vue@3.4.16)
