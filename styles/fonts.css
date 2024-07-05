@@ -231,6 +231,13 @@
 }
 
 @font-face {
+  font-family: 'InterRoman';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter-roman.latin.var.woff2') format('woff');
+}
+
+@font-face {
     font-family: 'WallauUnzialBold';
     font-style: normal;
     font-weight: 400;

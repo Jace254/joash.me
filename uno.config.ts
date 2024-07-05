@@ -23,8 +23,8 @@ export default defineConfig({
   theme: {
     fontFamily: {
       dm: 'WallauUnzialBold',
-      sans: 'Jetbrains Mono',
-      mono: 'rmono',
+      sans: 'InterRoman',
+      mono: 'JetBrains Mono',
     },
   },
   presets: [
