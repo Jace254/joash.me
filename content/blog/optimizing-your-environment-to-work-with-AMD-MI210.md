@@ -109,14 +109,14 @@ Great, That's done!!!...
 
 You can make the specific kernel version default while booting. If the kernel version you want to make default is already running on your system (as shown by the output of `uname -r`) and you would like to prevent it from being upgraded when using `sudo apt update && sudo apt upgrade`, you can use the `apt-mark` command to mark the package as hold:
 
-```
+```bash
 sudo apt-mark hold linux-image-<version>-generic
 sudo apt-mark hold linux-image-genric-hwe-20.04
 ```
 
 You can make sure it was held by running this:
 
-```
+```bash
 apt-mark showhold
 ```
 
