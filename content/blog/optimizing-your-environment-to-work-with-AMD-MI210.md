@@ -128,7 +128,7 @@ sudo update-grub
 
 Remove older kernels that are not in use by running the following command:
 
-```
+```bash
 sudo apt-get purge <kernel-version>
 ```
 
