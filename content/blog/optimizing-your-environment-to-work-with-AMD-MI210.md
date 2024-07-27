@@ -7,7 +7,7 @@ duration: 30 min
 
 ## Introduction
 
-The goal of this document is to enable to you to utilize your AMD Instinct MI210 on Machine Learning Tasks as well as Model Inferencing.
+The goal of this document is to enable you to utilize your AMD Instinct MI210 on Machine Learning Tasks as well as Model Inferencing.
 In order to do so, there are some things you have to set up beforehand and are crucial to the usage of your GPU. This Document is written with the assumption that you’ve already set up your hardware and installed VMWare ESXi 8 on it.
 
 ## Setup
