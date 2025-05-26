@@ -9,6 +9,7 @@ import { capitalizeFirstLetter } from '@/utils'
 //     apiHost: 'https://netwatch-api-concept.vercel.app/api/chat',
 //   })
 // })
+
 </script>
 
 <template>
