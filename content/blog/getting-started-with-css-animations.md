@@ -52,8 +52,6 @@ You'll notice that the element takes 2 seconds to animate to it's new width.
 
 You'll get something that looks like this:
 
-
-
 <div class="element">
 Hover me
 </div>
