@@ -6,34 +6,28 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
+    name: 'AIRFibers',
+    description: 'A comprehensive WISP Business Management System for internet service providers',
+    year: '2025',
+    link: 'https://app.airfibers.com',
+  },
+  {
     name: 'Sandblx',
-    description: 'Node Graph Visual Editor(Developing)',
-    year: '2024',
+    description: 'Node Graph Visual Editor For Creating Interactive Chat Experiences(Developing)',
+    year: '2025',
     link: 'https://sandblx.joash.me',
   },
   {
     name: 'Beeetle Chatbot',
-    description: 'A chatbot assitant for myself',
+    description: 'An AI chatbot assistant for my website',
     year: '2024',
     link: 'https://chatbot.joash.me',
   },
   {
-    name: '100',
-    description: '100 day challenge on design and development',
-    year: '2024',
-    link: 'https://100.joash.me',
-  },
-  {
     name: 'Hotspot UI',
-    description: 'Wezeshanet WISP Hostpot user portal',
+    description: 'Wezeshanet WISP Hotspot user portal',
     year: '2024',
     link: 'https://hotspot.joash.me',
-  },
-  {
-    name: 'vitesse-nuxt3-shadcn',
-    description: 'vitesse-nuxt3 template with shadcn',
-    year: '2024',
-    link: 'https://vitesse-nuxt3-shadcn.vercel.app',
   },
   {
     name: 'CodeGround',
@@ -42,15 +36,15 @@ export const projects: Project[] = [
     link: 'https://code.joash.me',
   },
   {
-    name: 'SurNote',
-    description: 'A text editor',
-    year: '2023',
-    link: 'https://sur.joash.me',
+    name: '100',
+    description: '100 day challenge on design and development',
+    year: '2024',
+    link: 'https://100.joash.me',
   },
   {
-    name: 'ISP Landing Page',
-    description: 'Wezeshanet WISP landing page',
-    year: '2023',
-    link: 'https://isp.wezeshanet.com/',
+    name: 'vitesse-nuxt3-shadcn',
+    description: 'vitesse-nuxt3 template with shadcn',
+    year: '2024',
+    link: 'https://vitesse-nuxt3-shadcn.vercel.app',
   },
 ]

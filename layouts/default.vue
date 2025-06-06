@@ -7,7 +7,6 @@ onMounted(() => {
     apiHost: 'https://netwatch-api-concept.vercel.app/api/chat',
   })
 })
-
 </script>
 
 <template>
