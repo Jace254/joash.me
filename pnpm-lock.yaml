@@ -9,7 +9,7 @@ dependencies:
     specifier: ^2.2.152
     version: 2.2.152
   '@resvg/resvg-js':
-    specifier: ^2.6.0
+    specifier: 2.6.0
     version: 2.6.0
   '@tanstack/vue-table':
     specifier: ^8.10.7
@@ -48,7 +48,7 @@ dependencies:
     specifier: ^1.2.3
     version: 1.2.3(vue@3.3.9)
   satori:
-    specifier: ^0.10.13
+    specifier: 0.10.13
     version: 0.10.13
   shikiji:
     specifier: ^0.9.5
@@ -3763,6 +3763,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.11.3):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:

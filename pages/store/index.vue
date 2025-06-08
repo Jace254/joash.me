@@ -6,18 +6,18 @@ const products = [
     link: '/store/product',
     price: '3500 KES',
   },
-  {
-    image: '/product-0.jpg',
-    name: 'Towering Man',
-    link: '/store/product',
-    price: '3500 KES',
-  },
-  {
-    image: '/product-0.jpg',
-    link: '/store/product',
-    name: 'Towering Man',
-    price: '3500 KES',
-  },
+  // {
+  //   image: '/product-0.jpg',
+  //   name: 'Towering Man',
+  //   link: '/store/product',
+  //   price: '3500 KES',
+  // },
+  // {
+  //   image: '/product-0.jpg',
+  //   link: '/store/product',
+  //   name: 'Towering Man',
+  //   price: '3500 KES',
+  // },
 ]
 </script>
 

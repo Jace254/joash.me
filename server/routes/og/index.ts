@@ -103,12 +103,14 @@ export default defineEventHandler(async (event) => {
         fonts: [
           {
             name: 'Arial',
+            // eslint-disable-next-line node/prefer-global/process
             data: readFileSync(join(process.cwd(), 'public/fonts', fonts[0])),
             weight: 400,
             style: 'normal',
           },
           {
             name: 'Arial',
+            // eslint-disable-next-line node/prefer-global/process
             data: readFileSync(join(process.cwd(), 'public/fonts', fonts[1])),
             weight: 700,
             style: 'normal',
@@ -136,6 +138,7 @@ export default defineEventHandler(async (event) => {
         const buffer = await img.arrayBuffer()
         return {
           url,
+          // eslint-disable-next-line node/prefer-global/buffer
           buffer: Buffer.from(buffer),
         }
       }),
@@ -154,6 +157,6 @@ export default defineEventHandler(async (event) => {
     return pngBuffer
   }
   catch (err) {
-    return createError({ statusCode: 500, statusMessage: err })
+    return createError({ statusCode: 500, statusMessage: err instanceof Error ? err.message : 'Internal Server Error' })
   }
 })

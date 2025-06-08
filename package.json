@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@iconify/json": "^2.2.152",
-    "@resvg/resvg-js": "^2.6.0",
+    "@resvg/resvg-js": "2.6.0",
     "@tanstack/vue-table": "^8.10.7",
     "@unocss/extractor-mdc": "^0.58.0",
     "@vee-validate/zod": "^4.12.2",
@@ -27,7 +27,7 @@
     "dayjs": "^1.11.10",
     "lucide-vue-next": "^0.294.0",
     "radix-vue": "^1.2.3",
-    "satori": "^0.10.13",
+    "satori": "0.10.13",
     "shikiji": "^0.9.5",
     "theme-vitesse": "^0.7.5",
     "vee-validate": "^4.12.2",
