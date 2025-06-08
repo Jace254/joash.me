@@ -1,5 +1,4 @@
 <template>
-  <NuxtLayout>
     <article class="prose">
       <h1>Apologies</h1>
       <p>
@@ -8,5 +7,4 @@
         </NuxtLink>
       </p>
     </article>
-  </NuxtLayout>
 </template>
