@@ -80,9 +80,9 @@ onBeforeUnmount(() => {
       <a class="select-none" title="Github" href="https://github.com/Jace254" rel="noopener" target="_blank">
         <div i-carbon-logo-github text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;" />
       </a>
-      <a class="select-none" title="Sponsor" href="https://github.com/sponsors/Jace254" rel="noopener" target="_blank">
+      <!-- <a class="select-none" title="Sponsor" href="https://github.com/sponsors/Jace254" rel="noopener" target="_blank">
         <div i-ph-hand-heart-duotone text-1.5em dark:hover:bg-white style="transition: background-color 0.3s ease-in-out;" />
-      </a>
+      </a> -->
     </nav>
   </header>
   <button
