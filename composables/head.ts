@@ -7,20 +7,24 @@ export function useCustomHead(title?: string | ComputedRef<string>, description?
       {
         name: 'description',
         content:
-          description ?? 'Joash Agesa\'s personal webiste',
+          description ?? 'Building for comfort',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@JoashMacenton' },
-      { name: 'twitter:title', content: title ?? 'Joash.me | Surronded by someone\'s life\'s work' },
-      { property: 'og:title', content: title ?? 'Joash.me | Surronded by someone\'s life\'s work' },
-      { property: 'og:url', content: 'https://joash.me/' },
-      { property: 'og:image', content: image ?? 'https://joash.me/og' },
-      { property: 'og:image:secure_url', content: image ?? 'https://joash.me/og' },
+      { name: 'twitter:domain', content: 'joash.me' },
+      { name: 'twitter:image', content: image ?? 'https://www.joash.me/og' },
+      { name: 'twitter:url', content: 'https://www.joash.me/' },
+      { name: 'twitter:description', content: description ?? 'Building for comfort' },
+      { name: 'twitter:title', content: title ?? 'Joash Agesa | Building for comfort' },
+      { property: 'og:title', content: title ?? 'Joash Agesa | Building for comfort' },
+      { property: 'og:url', content: 'https://www.joash.me/' },
+      { property: 'og:image', content: 'https://www.joash.me/og' },
+      { property: 'og:image:secure_url', content: 'https://www.joash.me/og' },
       { property: 'og:image:type', content: 'image/png' },
       {
         property: 'og:description',
         content:
-          description ?? 'Joash Agesa\'s personal webiste',
+          description ?? 'Building for comfort',
       },
     ],
   })
