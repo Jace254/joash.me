@@ -14,8 +14,8 @@ export function useCustomHead(title?: string | ComputedRef<string>, description?
       { name: 'twitter:title', content: title ?? 'Joash.me | Surronded by someone\'s life\'s work' },
       { property: 'og:title', content: title ?? 'Joash.me | Surronded by someone\'s life\'s work' },
       { property: 'og:url', content: 'https://joash.me/' },
-      { property: 'og:image', content: image ?? 'https://joash.me/og.png' },
-      { property: 'og:image:secure_url', content: image ?? 'https://joash.me/og.png' },
+      { property: 'og:image', content: image ?? 'https://joash.me/og' },
+      { property: 'og:image:secure_url', content: image ?? 'https://joash.me/og' },
       { property: 'og:image:type', content: 'image/png' },
       {
         property: 'og:description',
