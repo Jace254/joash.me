@@ -1,15 +1,6 @@
 <script setup lang='ts'>
 import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 
-// import BeeetleBot from 'beeetle-chatbot-js'
-import { capitalizeFirstLetter } from '@/utils'
-
-// onMounted(() => {
-//   BeeetleBot.initBubble({
-//     apiHost: 'https://netwatch-api-concept.vercel.app/api/chat',
-//   })
-// })
-
 </script>
 
 <template>

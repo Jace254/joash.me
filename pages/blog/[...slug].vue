@@ -3,6 +3,11 @@
 const { page, toc } = useContent()
 const navigation = toc.value.links
 
+useCustomHead(
+  page.value.frontmatter.title,
+  page.value.frontmatter.description,
+)
+
 onMounted(() => {
   const element = document.getElementById('element-5')
   const button = document.getElementById('replay')

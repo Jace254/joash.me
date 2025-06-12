@@ -2,6 +2,8 @@
 import crypticTyping from 'cryptic-typing'
 import { projects } from '@/lib'
 
+useCustomHead("Projects", "A collection of my projects, showcasing my skills and creativity. Explore the links to learn more about each project.")
+
 const newProjects = ref(projects.map((p) => { return { name: '', description: '', year: '', link: p.link } }))
 
 onBeforeMount(() => {

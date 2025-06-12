@@ -2,6 +2,9 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import { projects } from '@/lib'
 
+useCustomHead()
+
+
 const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }] }
 </script>
 

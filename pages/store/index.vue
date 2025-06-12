@@ -1,4 +1,7 @@
 <script setup lang="ts">
+
+useCustomHead("Store", "My curated artwork collection")
+
 const products = [
   {
     image: '/product-0.jpg',
