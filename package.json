@@ -26,7 +26,7 @@
     "cryptic-typing": "^1.0.14",
     "dayjs": "^1.11.10",
     "lucide-vue-next": "^0.294.0",
-    "nuxt": "3.8.2",
+    "nuxt": "^3.8.2",
     "radix-vue": "^1.2.3",
     "satori": "0.10.13",
     "shikiji": "^0.9.5",
