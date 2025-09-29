@@ -3,7 +3,7 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
+  presetWind3,
   transformerDirectives,
 } from 'unocss'
 import extractorMdc from '@unocss/extractor-mdc'
@@ -28,7 +28,7 @@ export default defineConfig({
     },
   },
   presets: [
-    presetUno(),
+    presetWind3(),
     presetIcons(),
     presetAttributify(),
     presetTypography(),

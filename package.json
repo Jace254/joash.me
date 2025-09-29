@@ -18,8 +18,7 @@
     "@iconify/json": "^2.2.152",
     "@resvg/resvg-js": "2.6.0",
     "@tanstack/vue-table": "^8.10.7",
-    "@unocss/extractor-mdc": "^0.58.0",
-    "@vee-validate/zod": "^4.12.2",
+
     "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
     "beeetle-chatbot-js": "1.0.27",
@@ -34,6 +33,7 @@
     "satori": "0.10.13",
     "shikiji": "^0.9.5",
     "theme-vitesse": "^0.7.5",
+    "unocss": "^66.5.2",
     "vee-validate": "^4.12.2"
   },
   "devDependencies": {
@@ -41,7 +41,10 @@
     "@nuxt/content": "3.7.1",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
-    "@unocss/nuxt": "^0.58.0",
+    "@unocss/extractor-mdc": "^0.58.0",
+    "@unocss/nuxt": "latest",
+    "@unocss/preset-mini": "0.57.1",
+    "@vee-validate/zod": "^4.12.2",
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "^9.36.0",
     "nuxt": "4.1.2",
