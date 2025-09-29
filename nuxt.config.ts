@@ -1,25 +1,33 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@nuxtjs/color-mode', '@nuxt/content', 'radix-vue/nuxt', '@/modules/og'],
+  modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+    'radix-vue/nuxt',
+    '@/modules/og',
+  ],
   colorMode: {
     classSuffix: '',
   },
   content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'vitesse-light',
-        dark: 'vitesse-dark',
-      },
-    },
-    markdown: {
-      remarkPlugins: [
-        'remark-external-links',
-      ],
-      toc: {
-        depth: 5,
-        searchDepth: 5,
+    build: {
+      markdown: {
+        rehypePlugins: {
+          'rehype-external-links': {},
+        },
+        highlight: {
+          theme: {
+            default: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        },
+        toc: {
+          depth: 5,
+          searchDepth: 5,
+        },
       },
     },
   },
@@ -31,4 +39,5 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
   },
+  compatibilityDate: '2024-04-03',
 })
