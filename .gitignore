@@ -4,11 +4,7 @@
 .nuxt
 .nitro
 .cache
-.vercel/output/**
-!.vercel/output/functions/
-!.vercel/output/functions/__nitro.func/
-!.vercel/output/functions/__nitro.func/.vc-config.json
-!.vercel/output/functions/__nitro.func/index.mjs
+
 
 dist
 
