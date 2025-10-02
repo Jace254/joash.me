@@ -5,13 +5,25 @@ interface Nav {
   children?: Nav[]
 }
 defineProps<{ navigation: Nav[] }>()
+
+const { scrollToAnchor } = useAnchorScroll({
+  toTop: {
+    scrollOptions: {
+      behavior: 'smooth',
+      offsetTop: 140,
+    }
+  },
+})
 </script>
 
 <template>
   <li v-for="link, idx of navigation" :key="idx">
-    <a :href="`#${link.id}`">
+    <NuxtLink
+      :href="`#${link.id}`"
+      @click="scrollToAnchor(link.id)"
+    >
       {{ link.text }}
-    </a>
+    </NuxtLink>
     <ul v-if="link.children">
       <TOCLinks :navigation="link.children" />
     </ul>

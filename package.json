@@ -5,7 +5,7 @@
   "packageManager": "pnpm@10.13.1",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxi build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -46,7 +46,8 @@
     "@vee-validate/zod": "^4.12.2",
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "^9.36.0",
-    "nuxt": "3.19.2",
+    "nuxt": "4.1.2",
+    "nuxt-anchorscroll": "^1.0.5",
     "remark-external-links": "^9.0.1",
     "tailwind-merge": "^2.1.0",
     "typescript": "^5.9.2",

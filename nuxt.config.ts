@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'radix-vue/nuxt',
     '@/modules/og',
+    'nuxt-anchorscroll',
   ],
   colorMode: {
     classSuffix: '',
@@ -36,8 +37,12 @@ export default defineNuxtConfig({
       titleTemplate: '%s',
     },
   },
-  nitro: {
-    preset: 'vercel',
+  anchorscroll: {
+    hooks: [
+      // Or any valid hook if needed
+      // Default is `page:finish`
+      'page:transition:finish',
+    ],
   },
-  compatibilityDate: "2025-07-15",
+  compatibilityDate: '2025-07-15',
 })
