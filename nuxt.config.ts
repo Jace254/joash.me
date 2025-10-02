@@ -44,5 +44,8 @@ export default defineNuxtConfig({
       'page:transition:finish',
     ],
   },
+  nitro: {
+    preset: 'vercel',
+  },
   compatibilityDate: '2025-07-15',
 })

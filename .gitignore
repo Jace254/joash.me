@@ -4,7 +4,12 @@
 .nuxt
 .nitro
 .cache
-.vercel
+.vercel/output/**
+!.vercel/output/functions/
+!.vercel/output/functions/__nitro.func/
+!.vercel/output/functions/__nitro.func/.vc-config.json
+!.vercel/output/functions/__nitro.func/index.mjs
+
 dist
 
 # Node dependencies
@@ -16,7 +21,7 @@ logs
 
 # Misc
 .DS_Store
-.fleet
+.fleet  
 .idea
 
 # Local env files
