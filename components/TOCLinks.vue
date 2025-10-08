@@ -20,7 +20,7 @@ const { scrollToAnchor } = useAnchorScroll({
   <li v-for="link, idx of navigation" :key="idx">
     <NuxtLink
       :href="`#${link.id}`"
-      @click="scrollToAnchor(link.id)"
+      @click="(e: MouseEvent) => { e.preventDefault(); scrollToAnchor(link.id); return false; }"
     >
       {{ link.text }}
     </NuxtLink>
