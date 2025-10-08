@@ -27,13 +27,14 @@
     "cryptic-typing": "^1.0.14",
     "dayjs": "^1.11.10",
     "lucide-vue-next": "^0.294.0",
-    "nuxt": "3.13.0",
+    "nuxt": "3.8.2",
     "radix-vue": "^1.2.3",
     "rehype-external-links": "^3.0.0",
     "satori": "0.10.13",
     "shikiji": "^0.9.5",
     "theme-vitesse": "^0.7.5",
-    "vee-validate": "^4.12.2"
+    "vee-validate": "^4.12.2",
+    "vue": "3.3.9"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.2.2",
