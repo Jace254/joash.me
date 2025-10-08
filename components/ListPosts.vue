@@ -14,19 +14,15 @@ function getGroupName(p: Post) {
     return 'Upcoming'
   return getYear(p.date)
 }
-
-const { data: posts } = await useAsyncData('blog-posts', () => {
-  // Fetches all items from the 'blog' collection
-  return queryCollection('blog').all();
-});
 </script>
 
 <template>
   <main>
-      <template v-if="posts">
-        <div v-for="blog, idx in posts" :key="blog.path">
+    <ContentList path="/blog">
+      <template #default="{ list }">
+        <div v-for="blog, idx in list" :key="blog._path">
           <div
-            v-if="!isSameGroup(blog as unknown as Post, posts[idx - 1] as unknown as Post)"
+            v-if="!isSameGroup(blog as unknown as Post, list[idx - 1] as unknown as Post)"
             select-none relative h20 pointer-events-none slide-enter
             max-w="content-fit"
             :style="{
@@ -49,14 +45,14 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
             }"
           >
             <component
-              :is="blog.path!.includes('://') ? 'a' : 'RouterLink'"
+              :is="blog._path!.includes('://') ? 'a' : 'RouterLink'"
               v-bind="
-                blog.path!.includes('://') ? {
-                  href: blog.path,
+                blog._path!.includes('://') ? {
+                  href: blog._path,
                   target: '_blank',
                   rel: 'noopener noreferrer',
                 } : {
-                  to: blog.path,
+                  to: blog._path,
                 }
               "
               class="item block font-normal mb-6 mt-2 no-underline"
@@ -107,10 +103,11 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
         </div>
       </template>
 
-      <template v-else>
+      <template #not-found>
         <div py2 op50>
           { nothing here yet }
         </div>
       </template>
+    </ContentList>
   </main>
 </template>

@@ -11,7 +11,7 @@ const { scrollToAnchor } = useAnchorScroll({
     scrollOptions: {
       behavior: 'smooth',
       offsetTop: 140,
-    }
+    },
   },
 })
 </script>
@@ -20,7 +20,7 @@ const { scrollToAnchor } = useAnchorScroll({
   <li v-for="link, idx of navigation" :key="idx">
     <NuxtLink
       :href="`#${link.id}`"
-      @click="(e: MouseEvent) => { e.preventDefault(); scrollToAnchor(link.id); return false; }"
+      @click="scrollToAnchor(link.id)"
     >
       {{ link.text }}
     </NuxtLink>

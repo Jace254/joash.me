@@ -1,10 +1,7 @@
 <script setup lang="ts">
 
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
-})
-const navigation = page.value?.body.toc?.links || []
+const { page, toc } = useContent()
+const navigation = toc.value.links
 
 useCustomHead(
   page.value?.title,
@@ -45,7 +42,7 @@ onMounted(() => {
 
 <template>
   <PostWrapper v-if="page" :frontmatter="page">
-    <ContentRenderer :value="page.body" />
+    <ContentDoc/>
   </PostWrapper>
 
   <div class="table-of-contents" v-if="navigation.length > 0">

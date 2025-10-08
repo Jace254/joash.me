@@ -1,19 +1,8 @@
 <script setup lang="ts">
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import { projects } from '@/lib'
 
-useCustomHead()
-
-const route = useRoute()
-console.log(route.path)
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('home').path(route.path).first()
-})
-
-const { data: posts } = await useAsyncData('blog-posts', () => {
-  // Fetches all items from the 'blog' collection
-  return queryCollection('blog').all();
-});
-
+const query: QueryBuilderParams = { path: '/blog', limit: 5, sort: [{ date: -1 }] }
 </script>
 
 <template>
@@ -22,7 +11,7 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
     class="slide-enter-content prose"
     md:px-0 px-7 relative block
   >
-    <ContentRenderer v-if="page" :value="page"/>
+    <ContentDoc />
   </article>
   <div grid="~ md:cols-3 cols-1" gap-x-3 w-full class=" prose" md:px-0 px-7 relative>
     <div flex flex-col gap-2 items-start class="slide-enter-content">
@@ -38,7 +27,7 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
       <div v-for="project, idx of projects.slice(0, 5)" :key="idx">
         <NuxtLink :to="project.link" target="_blank" rel="noopener" class="after:i-ic-sharp-arrow-outward after:text-gray after:content-[''] after:text-md after:inline-block">
           {{ project.name }}
-          <span   />
+          <span />
         </NuxtLink>
         <p text=".9rem">
           {{ project.description }}
@@ -54,19 +43,21 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
       <h4 text-black dark:text-white>
         Writing
       </h4>
-        <div v-for="blog in posts" :key="blog.path">
-          <NuxtLink :to="blog.path">
+      <ContentList v-slot="{ list }" :query="query">
+        <div v-for="blog in list" :key="blog._path">
+          <NuxtLink :to="blog._path">
             {{ blog.title }}
           </NuxtLink>
           <p text=".9rem">
             {{ blog.description }}
           </p>
         </div>
-        <div v-if="posts?.length === 5">
+        <div v-if="list.length === 5">
           <NuxtLink class="block mb-6 mt--2 border-foreground" to="/blog" style="cursor: pointer; border-bottom: 1px dashed;">
             More
           </NuxtLink>
         </div>
+      </ContentList>
     </div>
   </div>
 </template>
