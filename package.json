@@ -5,12 +5,11 @@
   "packageManager": "pnpm@10.13.1",
   "license": "MIT",
   "scripts": {
-    "build": "nuxi build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "typecheck": "nuxt typecheck",
-    "prepare": "nuxt prepare",
+    "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "format": "eslint . --fix"
   },
