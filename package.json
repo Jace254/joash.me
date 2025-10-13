@@ -21,6 +21,7 @@
     "@vercel/analytics": "^1.2.0",
     "@vercel/speed-insights": "^1.0.10",
     "beeetle-chatbot-js": "1.0.27",
+    "better-sqlite3": "^12.4.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cryptic-typing": "^1.0.14",
@@ -35,7 +36,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.2.2",
-    "@nuxt/content": "2.9.0",
+    "@nuxt/content": "3.7.1",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
     "@unocss/nuxt": "^0.58.0",

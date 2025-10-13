@@ -9,13 +9,13 @@ const newProjects = ref(projects.map((p) => { return { name: '', description: ''
 onBeforeMount(() => {
   projects.forEach((p, i) => {
     crypticTyping(p.name, (n) => {
-      newProjects.value[i].name = n
+      newProjects.value[i]!.name = n
     }, false)
     crypticTyping(p.description, (n) => {
-      newProjects.value[i].description = n
+      newProjects.value[i]!.description = n
     }, false)
     crypticTyping(p.year, (n) => {
-      newProjects.value[i].year = n
+      newProjects.value[i]!.year = n
     }, true, 90)
   })
 })

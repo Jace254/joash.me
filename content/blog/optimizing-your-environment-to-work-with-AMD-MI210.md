@@ -1,6 +1,6 @@
 ---
 title: Machine Learning and Inference Setup on AMD Instinct MI210 with VMware ESXi 8
-date: 2024-07-18T2:45:11Z
+date: 2024-07-18T02:45:11Z
 description: A guide on utilizing your AMD MI210 GPU for AI
 duration: 30 min
 ---

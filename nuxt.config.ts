@@ -6,20 +6,21 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'vitesse-light',
-        dark: 'vitesse-dark',
-      },
-    },
-    markdown: {
-      remarkPlugins: [
-        'remark-external-links',
-      ],
-      toc: {
-        depth: 5,
-        searchDepth: 5,
+    build: {
+      markdown: {
+        rehypePlugins: {
+          'rehype-external-links': {},
+        },
+        highlight: {
+          theme: {
+            default: 'vitesse-light',
+            dark: 'vitesse-dark',
+          },
+        },
+        toc: {
+          depth: 5,
+          searchDepth: 5,
+        },
       },
     },
   },

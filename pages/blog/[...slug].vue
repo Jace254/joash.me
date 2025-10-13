@@ -1,11 +1,14 @@
 <script setup lang="ts">
 
-const { page, toc } = useContent()
-const navigation = toc.value.links
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first()
+})
+const navigation = page.value?.body.toc?.links || []
 
 useCustomHead(
-  page.value.frontmatter.title,
-  page.value.frontmatter.description,
+  page.value?.title,
+  page.value?.description,
 )
 
 onMounted(() => {
@@ -42,7 +45,7 @@ onMounted(() => {
 
 <template>
   <PostWrapper v-if="page" :frontmatter="page">
-    <ContentDoc />
+    <ContentRenderer :value="page.body" />
   </PostWrapper>
 
   <div class="table-of-contents" v-if="navigation.length > 0">
