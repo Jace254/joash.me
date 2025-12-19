@@ -6,6 +6,12 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
+    name: 'Reliable Medical',
+    description: 'Reliable Medical Equipement website',
+    year: '2025',
+    link: 'https://reliablemedical.co.ke',
+  },
+  {
     name: 'AIRFibers',
     description: 'ISP Business Management Platform',
     year: '2025',
@@ -29,16 +35,11 @@ export const projects: Project[] = [
     year: '2024',
     link: 'https://hotspot.joash.me',
   },
+
   {
     name: '100',
     description: '100 day challenge on design and development',
     year: '2024',
     link: 'https://100.joash.me',
   },
-  {
-    name: 'CodeGround',
-    description: 'Automated docs and coding playground',
-    year: '2023',
-    link: 'https://code.joash.me',
-  }
 ]
